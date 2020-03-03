@@ -1,20 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09050071-f454-4ea5-a7d7-4d9077b8f157" name="Default Changelist" comment="" />
+    <list default="true" id="09050071-f454-4ea5-a7d7-4d9077b8f157" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/cssinjs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/reactTemplatesPlugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/ButtonDisabled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/Alerts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/Copyright.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/SignIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/SignUp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/Types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/alert/alertContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/alert/alertReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/auth/authContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/auth/authReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ultils/setAuthToken.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/default.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/movie-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/movie-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1YUH7uuyh9tWjrm6RFoKlgb6TMg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
     <property name="last_opened_file_path" value="E:/anroid/ebook-api" />
@@ -25,7 +78,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -37,7 +90,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582990088290</updated>
-      <workItem from="1582990089594" duration="3134000" />
+      <workItem from="1582990089594" duration="10010000" />
+      <workItem from="1583025197607" duration="7675000" />
+      <workItem from="1583051499350" duration="8088000" />
+      <workItem from="1583069428653" duration="9308000" />
+      <workItem from="1583108471503" duration="2269000" />
+      <workItem from="1583115737628" duration="5616000" />
+      <workItem from="1583137323446" duration="246000" />
+      <workItem from="1583137580219" duration="42000" />
+      <workItem from="1583137634604" duration="3186000" />
+      <workItem from="1583152241814" duration="8602000" />
+      <workItem from="1583198702684" duration="2237000" />
     </task>
     <servers />
   </component>
@@ -49,18 +112,44 @@
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="323" y="91" key="#Usage_Scope/0.0.1462.864@0.0.1462.864" timestamp="1582992954284" />
-    <state x="461" y="212" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1582992599166">
+    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583156730347">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1536.824@0.40.1536.824" timestamp="1583156730347" />
+    <state x="461" y="212" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1583028004256">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="461" y="212" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1462.864@0.0.1462.864" timestamp="1582992599166" />
-    <state x="512" y="187" key="FileChooserDialogImpl" timestamp="1582993149821">
-      <screen x="0" y="0" width="1462" height="864" />
+    <state x="461" y="212" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1462.864@0.0.1462.864" timestamp="1583028004256" />
+    <state x="499" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583053018673">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="499" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1536.824@0.40.1536.824" timestamp="1583053018673" />
+    <state x="538" y="218" key="FileChooserDialogImpl" timestamp="1583200230695">
+      <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="512" y="187" key="FileChooserDialogImpl/0.0.1462.864@0.0.1462.864" timestamp="1582993149821" />
-    <state x="240" y="75" key="SettingsEditor" timestamp="1582993156616">
-      <screen x="0" y="0" width="1462" height="864" />
+    <state x="538" y="218" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1583200230695" />
+    <state width="1515" height="202" key="GridCell.Tab.0.bottom" timestamp="1583052502203">
+      <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="240" y="75" key="SettingsEditor/0.0.1462.864@0.0.1462.864" timestamp="1582993156616" />
+    <state width="1515" height="202" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1583052502203" />
+    <state width="1515" height="202" key="GridCell.Tab.0.center" timestamp="1583052502203">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1515" height="202" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1583052502203" />
+    <state width="1515" height="202" key="GridCell.Tab.0.left" timestamp="1583052502202">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1515" height="202" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1583052502202" />
+    <state width="1515" height="202" key="GridCell.Tab.0.right" timestamp="1583052502203">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="1515" height="202" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1583052502203" />
+    <state x="292" y="74" key="SettingsEditor" timestamp="1583138264963">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="240" y="75" key="SettingsEditor/0.0.1462.864@0.0.1462.864" timestamp="1583028011998" />
+    <state x="292" y="74" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1583138264963" />
     <state x="448" y="241" key="jetbrains.nodejs.interpreters-dialog" timestamp="1582993151421">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
@@ -69,5 +158,9 @@
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="388" y="197" key="run.anything.popup/0.0.1462.864@0.0.1462.864" timestamp="1582990778058" />
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1583056406629">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1583056406629" />
   </component>
 </project>
