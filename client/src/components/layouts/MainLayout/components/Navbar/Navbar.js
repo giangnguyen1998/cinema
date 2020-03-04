@@ -26,7 +26,7 @@ export default function () {
 
     //logout
     const authContext = useContext(AuthContext);
-    const {isAuthenticated, logout, user} = authContext;
+    const {isAuthenticated, logout, login} = authContext;
     const isAuth = (isAuthenticated === "true");
 
     const onLogout = () => {
@@ -118,7 +118,7 @@ export default function () {
                                                 <MenuItem onClick={handleClose}>My account</MenuItem>
                                                 <MenuItem onClick={handleClose}>Change Password</MenuItem>
                                                 {!isAuth ? (
-                                                    <MenuItem onClick={handleClose}>Login</MenuItem>
+                                                    <MenuItem >Login</MenuItem>
                                                 ) :
                                                     <MenuItem onClick={logout}>Logout</MenuItem>
                                                 }
