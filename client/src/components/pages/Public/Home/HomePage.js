@@ -1,9 +1,11 @@
-import React, {Fragment, useEffect} from 'react';
+import React, {Fragment, useEffect, useContext} from 'react';
 import {Box} from '@material-ui/core';
 import MovieCarousel from '../components/MovieCarousel/MovieCarousel';
 import MovieBanner from '../components/MovieBanner/MovieBanner';
 import styles from './styles';
 import withStyles from "@material-ui/core/styles/withStyles";
+
+import AuthContext from "../../../../context/auth/authContext";
 
 import {
     randomMovie,
@@ -12,8 +14,17 @@ import {
     suggested
 } from "../../../data/MovieDataService";
 
-const Home = () => {
+const HomePage = () => {
     const classes = withStyles(styles);
+    const authContext = useContext(AuthContext);
+    const {isAuthenticated, loadUser} = authContext;
+
+    useEffect(() => {
+        if (isAuthenticated === "true") {
+            authContext.loadUser();
+        }
+        //eslint-disable-next-line
+    },[]);
 
     return (
         <Fragment>
@@ -36,14 +47,8 @@ const Home = () => {
                 to="/"
                 movies={comingSoon}
             />
-            {/*{false && (*/}
-            {/*    <Grid container style={{height: 500}}>*/}
-            {/*        <Grid item xs={7} style={{background: '#131334'}}></Grid>*/}
-            {/*        <Grid item xs={5} style={{background: '#010025'}}></Grid>*/}
-            {/*    </Grid>*/}
-            {/*)}*/}
         </Fragment>
     );
 };
 
-export default Home;
+export default HomePage;

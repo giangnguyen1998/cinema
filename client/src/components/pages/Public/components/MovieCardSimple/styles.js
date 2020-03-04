@@ -1,4 +1,6 @@
-export default theme => ({
+import makeStyles from "@material-ui/core/styles/makeStyles";
+
+export default makeStyles(theme => ({
     card: {
         display: 'flex',
         flex: ' 0 0 auto',
@@ -6,7 +8,9 @@ export default theme => ({
         width: 400,
         height: 400,
         boxShadow: `10px 5px 40px 20px ${theme.palette.background.dark}`,
-        margin: '60px 30px'
+        margin: '60px 30px',
+        color: theme.palette.common.white,
+        backgroundColor: 'transparent',
     },
     header: {
         backgroundColor: '#7fc7d9', // Average color of the background image.
@@ -23,4 +27,4 @@ export default theme => ({
         padding: '15px',
         whiteSpace: 'normal'
     }
-});
+}));

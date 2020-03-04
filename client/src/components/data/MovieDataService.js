@@ -179,6 +179,10 @@ export const fullMovies = [
     }
 ];
 
+export const getMovie = (movieId) => {
+    return fullMovies.find(movie => movie._id === movieId);
+};
+
 export const nowShowing = fullMovies.filter(movie => movie._id > 0 && movie._id < 10);
 
 export const comingSoon = fullMovies.filter(movie => movie._id > 10 && movie._id < 19);

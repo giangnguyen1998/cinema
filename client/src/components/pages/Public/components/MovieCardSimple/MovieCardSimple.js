@@ -11,13 +11,28 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 const useStyles = makeStyles(theme => ({
     card: {
         maxWidth: 400,
+        position: 'relative',
+        maxHeight: 400,
+        overflow: 'hidden',
         backgroundColor: 'transparent',
-        borderRadius: 0,
+        borderRadius: 10,
         color: theme.palette.common.white,
-        boxShadow: 'unset'
+        boxShadow: 'unset',
     },
     media: {
-        height: 300
+        height: 400,
+        transition: '500ms ease-in-out',
+        overflow: 'hidden',
+        '&:hover' : {
+            opacity: '0.45',
+            transform: 'scale(1.2)',
+        }
+    },
+    text: {
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0
     },
     h5: {
         textTransform: 'capitalize'
@@ -37,7 +52,7 @@ const MovieCardSimple = props => {
                         image={movie.image}
                         title={movie.title}
                     />
-                    <CardContent>
+                    <CardContent className={classes.text}>
                         <Typography
                             className={classes.h5}
                             gutterBottom

@@ -10,7 +10,8 @@ import PublicLayout from "./components/layouts/PublicLayout/PublicLayout";
 // Register - Login
 const SignIn = lazy(() => import((`./components/pages/SignIn`)));
 const SignUp = lazy(() => import((`./components/pages/SignUp`)));
-const Home = lazy(() => import((`./components/pages/Public/Home/Home`)));
+const HomePage = lazy(() => import((`./components/pages/Public/Home/HomePage`)));
+const MoviePage = lazy(() => import((`./components/pages/Public/Movie/MoviePage`)));
 
 const Routes = () => {
     return (
@@ -24,8 +25,17 @@ const Routes = () => {
                         exact
                         path="/"
                         layout={PublicLayout}
-                        component={Home}
+                        component={HomePage}
                     />
+
+                    <WithLayoutRoute
+                        exact
+                        path="/movie/:id"
+                        layout={PublicLayout}
+                        layoutProps={{ withFooter: false }}
+                        component={MoviePage}
+                    />
+
                     <Route path="*" component={() => '404 NOT FOUND'} />
                 </Switch>
             </Router>

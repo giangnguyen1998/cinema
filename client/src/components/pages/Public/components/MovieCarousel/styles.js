@@ -20,7 +20,7 @@ export default theme => ({
         position: 'absolute',
         top: 0,
         bottom: 60,
-        width: '20%',
+        width: '5%',
         display: 'flex',
         alignItems: 'center',
         background: 'rgba(0,0,0,.5)',
