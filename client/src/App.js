@@ -1,18 +1,18 @@
-import React, {Fragment} from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
-
-import SignIn from "./components/pages/SignIn";
-import SignUp from "./components/pages/SignUp";
+import './assets/scss/index.css';
 
 import AuthState from "./context/auth/AuthState";
 import AlertState from "./context/alert/AlertState";
 import Alerts from "./components/layouts/Alerts";
 import setAuthToken from "./ultils/setAuthToken";
-import Home from "./components/pages/Home";
-import PrivateRoute from "./components/routing/PrivateRoute";
-import HomePage from "./components/pages/HomePage/HomePage";
-import MainLayout from "./components/layouts/MainLayout/MainLayout";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { ThemeProvider } from '@material-ui/core/styles';
+
+import theme from './theme';
+import Routes from "./Routes";
+import 'typeface-montserrat';
 
 if (localStorage.token) {
     setAuthToken(localStorage.token);
@@ -23,14 +23,11 @@ const App = () => {
         <AuthState>
             <AlertState>
                 <Router>
-                    <Fragment>
+                    <ThemeProvider theme={theme}>
+                        <CssBaseline />
                         <Alerts/>
-                        <Switch>
-                            <Route exact path={"/"} component={MainLayout} />
-                            <Route exact path={"/login"} component={SignIn}/>
-                            <Route exact path={"/register"} component={SignUp}/>
-                        </Switch>
-                    </Fragment>
+                        <Routes/>
+                    </ThemeProvider>
                 </Router>
             </AlertState>
         </AuthState>

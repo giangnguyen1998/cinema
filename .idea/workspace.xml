@@ -2,10 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09050071-f454-4ea5-a7d7-4d9077b8f157" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/Icons8-Ios7-Cinema-Imdb.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/scss/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Loading/Loading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/PublicLayout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/components/UserPopover/UserPopover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Home/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Home/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCard/MovieCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCard/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCardSimple/MovieCardSimple.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCardSimple/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCarousel/MovieCarousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCarousel/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/routing/WithLayoutRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ultils/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/MainLayout/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/MainLayout/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/test/textabc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/MainLayout/MainLayout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/MainLayout/components/Footer/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/MainLayout/components/Footer/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/MainLayout/components/Navbar/Navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/MainLayout/components/Navbar/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/MainLayout/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/Components/MovieBanner/Infinity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/Components/MovieBanner/MovieBanner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/Components/MovieBanner/endgame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/Components/MovieBanner/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/Components/MovieItem/MovieItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/Components/MovieItem/bgfantasy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/Components/MovieItem/fantasy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/Components/MovieItem/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/Components/MovieList/MovieList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/Components/MovieList/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/HomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +98,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,9 +107,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\react\cinema\client\src\components\pages\Public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\react\cinema\client\public" />
       <recent name="C:\Users\Nguye\WebstormProjects\cinema\client\src\components\pages\HomePage\Components" />
       <recent name="C:\Users\Nguye\WebstormProjects\cinema\client\src" />
       <recent name="C:\Users\Nguye\WebstormProjects\cinema\client\src\components\layouts\MainLayout\components\Navbar" />
@@ -90,6 +145,7 @@
       <workItem from="1583224556296" duration="2889000" />
       <workItem from="1583239122485" duration="146000" />
       <workItem from="1583301981984" duration="6627000" />
+      <workItem from="1583313360495" duration="19317000" />
     </task>
     <servers />
   </component>
@@ -101,10 +157,10 @@
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="323" y="91" key="#Usage_Scope/0.0.1462.864@0.0.1462.864" timestamp="1582992954284" />
-    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583156730347">
+    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583322264380">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1536.824@0.40.1536.824" timestamp="1583156730347" />
+    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1536.824@0.40.1536.824" timestamp="1583322264380" />
     <state x="461" y="212" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1583028004256">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
@@ -113,32 +169,36 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="499" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1536.824@0.40.1536.824" timestamp="1583053018673" />
+    <state x="406" y="225" key="EditFileWatcherDialog" timestamp="1583331741807">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="406" y="225" key="EditFileWatcherDialog/0.40.1536.824@0.40.1536.824" timestamp="1583331741807" />
     <state x="538" y="187" key="FileChooserDialogImpl" timestamp="1583239155821">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="512" y="187" key="FileChooserDialogImpl/0.0.1462.864@0.0.1462.864" timestamp="1582993149821" />
     <state x="538" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1583239155821" />
     <state x="538" y="218" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1583200230695" />
-    <state width="1513" height="203" key="GridCell.Tab.0.bottom" timestamp="1583224738840">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1515" height="202" key="GridCell.Tab.0.bottom" timestamp="1583313768702">
+      <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1513" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583224738840" />
-    <state width="1515" height="202" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1583052502203" />
-    <state width="1513" height="203" key="GridCell.Tab.0.center" timestamp="1583224738839">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1515" height="202" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1583313768702" />
+    <state width="1515" height="202" key="GridCell.Tab.0.center" timestamp="1583313768702">
+      <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1513" height="203" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583224738839" />
-    <state width="1515" height="202" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1583052502203" />
-    <state width="1513" height="203" key="GridCell.Tab.0.left" timestamp="1583224738839">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1515" height="202" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1583313768702" />
+    <state width="1515" height="202" key="GridCell.Tab.0.left" timestamp="1583313768702">
+      <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1513" height="203" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583224738839" />
-    <state width="1515" height="202" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1583052502202" />
-    <state width="1513" height="203" key="GridCell.Tab.0.right" timestamp="1583224738839">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1515" height="202" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1583313768702" />
+    <state width="1515" height="202" key="GridCell.Tab.0.right" timestamp="1583313768702">
+      <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1513" height="203" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583224738839" />
-    <state width="1515" height="202" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1583052502203" />
+    <state width="1515" height="202" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1583313768702" />
     <state x="292" y="74" key="SettingsEditor" timestamp="1583138264963">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
