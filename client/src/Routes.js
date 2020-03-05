@@ -8,8 +8,9 @@ import WithLayoutRoute from "./components/routing/WithLayoutRoute";
 import PublicLayout from "./components/layouts/PublicLayout/PublicLayout";
 
 // Register - Login
-const SignIn = lazy(() => import((`./components/pages/SignIn`)));
-const SignUp = lazy(() => import((`./components/pages/SignUp`)));
+// const SignUp = lazy(() => import((`./components/pages/SignUp`)));
+const RegisterPage = lazy(() => import(`./components/pages/Public/Register/RegisterPage`));
+const LoginPage = lazy(() => import(`./components/pages/Public/Login/LoginPage`));
 const HomePage = lazy(() => import((`./components/pages/Public/Home/HomePage`)));
 const MoviePage = lazy(() => import(`./components/pages/Public/Movie/MoviePage`));
 const NotFound = lazy(() => import(`./components/pages/Public/NotFound/NotFound`));
@@ -24,14 +25,14 @@ const Routes = () => {
                         path="/login"
                         layout={PublicLayout}
                         layoutProps={{withFooter: false, withNavbar: false}}
-                        component={SignIn}/>
+                        component={LoginPage}/>
 
                     <WithLayoutRoute
                         exact
                         path="/register"
                         layout={PublicLayout}
                         layoutProps={{withFooter: false, withNavbar: false}}
-                        component={SignUp}/>
+                        component={RegisterPage}/>
 
                     <WithLayoutRoute
                         exact

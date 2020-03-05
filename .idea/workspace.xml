@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09050071-f454-4ea5-a7d7-4d9077b8f157" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/css/404.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/scss/model-video.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/NotFound/NotFound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/LoginPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/LoginForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Register/RegisterPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Register/components/RegisterForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Register/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/PublicLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/PublicLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/SignIn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,7 @@
       <workItem from="1583239122485" duration="146000" />
       <workItem from="1583301981984" duration="6627000" />
       <workItem from="1583313360495" duration="26192000" />
-      <workItem from="1583373584007" duration="9544000" />
+      <workItem from="1583373584007" duration="15692000" />
     </task>
     <servers />
   </component>

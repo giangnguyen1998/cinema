@@ -17,14 +17,18 @@ router.post("/", [
     check("email", "Please include a valid email")
         .isEmail(),
     check("password", "Please enter a password with 6 or more characters")
-        .isLength({min: 6})
+        .isLength({min: 6}),
+    check("phone", "Please enter a phone number with 10 characters")
+        .not()
+        .isEmpty()
+        .isLength({min: 10, max: 10})
 ], async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.status(400).json({errors: errors.array()});
     }
 
-    const {name, email, password, role} = req.body;
+    const {name, email, password, role, phone} = req.body;
 
     try {
         let user = await User.findOne({email});
@@ -37,6 +41,7 @@ router.post("/", [
             name,
             email,
             password,
+            phone,
             role
         });
 
