@@ -6,13 +6,11 @@ import {
 } from "../../../data/MovieDataService";
 
 const MoviePage = (props) => {
-
+    const {match: {params}} = props;
     // componentWillUnmount() {
     //     this.props.onSelectMovie(null);
     // }
-
-    const movie = getMovie(1);
-
+    const movie = getMovie(params.id);
     return <>{movie && <MovieBanner movie={movie} fullDescription/>}</>;
 };
 

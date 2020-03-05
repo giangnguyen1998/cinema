@@ -6,6 +6,16 @@ export default theme => ({
         color: theme.palette.common.white,
         backgroundColor: theme.palette.background.dark
     },
+    modalYoutube: {
+        position: 'absolute',
+        height: 'auto',
+        width: '500px',
+        top: '50%',
+        left: '50%',
+        marginLeft: -50,
+        marginTop: -50,
+        zIndex: 5
+    },
     blurBackground: {
         position: 'absolute',
         top: 0,
@@ -88,21 +98,21 @@ export default theme => ({
             transitionDelay: '0.15s'
         }
     },
-    movieActions: { position: 'absolute', bottom: 0, right: 0 },
+    movieActions: {position: 'absolute', bottom: 0, right: 0},
     button: {
         width: 200,
         height: 70,
         borderRadius: 0,
         zIndex: 2
     },
-    learnMore: { color: theme.palette.common.white },
-    buttonIcon: { marginLeft: theme.spacing(2) },
+    learnMore: {color: theme.palette.common.white},
+    buttonIcon: {marginLeft: theme.spacing(2)},
     [theme.breakpoints.down('sm')]: {
         infoSection: {
             background:
                 'linear-gradient(to right, rgba(0,0,0,.9) 70%, transparent 100%)'
         },
-        movieHeader: { maxWidth: '90%' },
+        movieHeader: {maxWidth: '90%'},
         movieTitle: {
             maxWidth: '100%',
             fontSize: '16px'
@@ -111,8 +121,8 @@ export default theme => ({
             maxWidth: '100%',
             fontSize: '12px'
         },
-        tag: { padding: theme.spacing(0.3, 1), margin: theme.spacing(1, 1, 1, 0) },
-        movieActions: { display: 'flex', width: '100%' },
+        tag: {padding: theme.spacing(0.3, 1), margin: theme.spacing(1, 1, 1, 0)},
+        movieActions: {display: 'flex', width: '100%'},
         button: {
             flex: 1,
             fontSize: 13,

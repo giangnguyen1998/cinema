@@ -13,10 +13,10 @@ const useStyles = makeStyles(theme => ({
 
 const PublicLayout = (props) => {
     const classes = useStyles(props);
-    const { children, withFooter = true } = props;
+    const { children, withFooter = true, withNavbar = true } = props;
     return (
         <div className={classes.root}>
-            <Navbar />
+            {withNavbar && <Navbar />}
             {children}
             {withFooter && <Footer />}
         </div>

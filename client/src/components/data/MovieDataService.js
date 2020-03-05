@@ -22,7 +22,8 @@ export const fullMovies = [
         description: "more than two decades have passed since sarah connor prevented judgment day, changed the future, and re-wrote the fate of the human race. dani ramos is living a simple life in mexico city with her brother and father when a highly advanced and deadly new terminator – a rev-9 – travels back through time to hunt and kill her. dani's survival depends on her joining forces with two warriors: grace, an enhanced super-soldier from the future, and a b...",
         genre: "adventure",
         director: "tim miller",
-        duration: "128"
+        duration: "128",
+        videoId: "oxy8udgWRmo"
     },
     {
         _id: 2,
@@ -31,7 +32,8 @@ export const fullMovies = [
         description: "spiderman the awesome movie",
         genre: "adventure",
         director: "chris evans",
-        duration: "120"
+        duration: "120",
+        videoId: "TcMBFSGVi1c"
     },
     {
         _id: 3,
@@ -40,7 +42,8 @@ export const fullMovies = [
         description: "simba idolises his father, king mufasa, and takes to heart his own royal destiny. but not everyone in the kingdom celebrates the new cub's arrival. scar, mufasa's brother—and former heir to the throne—has plans of his own. the battle for pride rock is ravaged with betrayal, tragedy and drama, ultimately resulting in simba's exile. with help from a curious pair of newfound friends, simba will have to figure out how to grow up and take back what...",
         genre: "adventure",
         director: "jon favreau",
-        duration: "120"
+        duration: "120",
+        videoId: "7TavVZMewpY"
     },
     {
         _id: 4,
@@ -49,7 +52,8 @@ export const fullMovies = [
         description: "columbus, tallahassee, wichita, and little rock move to the american heartland as they face off against evolved zombies, fellow survivors, and the growing pains of the snarky makeshift family.",
         genre: "action",
         director: "ruben fleischer",
-        duration: "120"
+        duration: "120",
+        videoId: "ZlW9yhUKlkQ"
     },
     {
         _id: 5,
@@ -58,7 +62,8 @@ export const fullMovies = [
         description: "england, 15th century. hal, a capricious prince who lives among the populace far from court, is forced by circumstances to reluctantly accept the throne and become henry v.",
         genre: "drama",
         director: "david michood",
-        duration: "120"
+        duration: "120",
+        videoId: "svVykTznk9Q"
     },
     {
         _id: 6,
@@ -67,7 +72,8 @@ export const fullMovies = [
         description: "during the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in gotham city while becoming an infamous psychopathic crime figure.",
         genre: "thriller,action,adventure,drama",
         director: "todd phillips",
-        duration: "122"
+        duration: "122",
+        videoId: "zAGVQLHvwOY"
     },
     {
         _id: 7,
@@ -76,7 +82,8 @@ export const fullMovies = [
         description: "set in an alternate history where “superheroes” are treated as outlaws, “watchmen” embraces the nostalgia of the original groundbreaking graphic novel while attempting to break new ground of its own.",
         genre: "drama",
         director: "damon lindelof",
-        duration: "60"
+        duration: "60",
+        videoId: "wglmbroElU0"
     },
     {
         _id: 8,
@@ -85,7 +92,8 @@ export const fullMovies = [
         description: "maleficent and her goddaughter aurora begin to question the complex family ties that bind them as they are pulled in different directions by impending nuptials, unexpected allies, and dark new forces at play.",
         genre: "fantasy",
         director: "joachim ronning",
-        duration: "131"
+        duration: "131",
+        videoId: "n0OFH4xpPr4"
     },
     {
         _id: 9,
@@ -94,7 +102,8 @@ export const fullMovies = [
         description: "in a small peaceful town, zombies suddenly rise to terrorize the town. now three bespectacled police officers and a strange scottish morgue expert must band together to defeat the undead.",
         genre: "horror",
         director: "jim jarmusch",
-        duration: "160"
+        duration: "160",
+        videoId: "bs5ZOcU6Bnw"
     },
     {
         _id: 10,
@@ -103,7 +112,8 @@ export const fullMovies = [
         description: "when john rambo's niece travels to mexico to find the father that abandoned her and her mother, she finds herself in the grasps of calle mexican sex traffickers. when she doesn't return home as expected, john learns she's crossed into mexico and sets out to get her back and make them pay.",
         genre: "action",
         director: "adrian grunberg",
-        duration: "128"
+        duration: "128",
+        videoId: "4vWg5yJuWfs"
     },
     {
         _id: 11,
@@ -112,7 +122,8 @@ export const fullMovies = [
         description: "super-assassin john wick returns with a $14 million price tag on his head and an army of bounty-hunting killers on his trail. after killing a member of the shadowy international assassin’s guild, the high table, john wick is excommunicado, but the world’s most ruthless hit men and women await his every turn...",
         genre: "action,adventure",
         director: "chad stahelski",
-        duration: "131"
+        duration: "131",
+        videoId: "pU8-7BX9uxs"
     },
     {
         _id: 12,
@@ -121,7 +132,8 @@ export const fullMovies = [
         description: "a kindhearted street urchin named aladdin embarks on a magical adventure after finding a lamp that releases a wisecracking genie while a power-hungry grand vizier vies for the same lamp that has the power to make their deepest wishes come true.",
         genre: "131",
         director: "guy ritchie",
-        duration: "fantasy"
+        duration: "fantasy",
+        videoId: "mw5VIEIvuMI"
     },
     {
         _id: 13,
@@ -130,7 +142,8 @@ export const fullMovies = [
         description: "the addams family's lives begin to unravel when they face-off against a treacherous, greedy crafty reality-tv host while also preparing for their extended family to arrive for a major celebration.",
         genre: "comedy",
         director: "conrad vernon, greg tiernan",
-        duration: "128"
+        duration: "128",
+        videoId: "F7Ug863S8dQ"
     },
     {
         _id: 14,
@@ -139,7 +152,8 @@ export const fullMovies = [
         description: "27 years after overcoming the malevolent supernatural entity pennywise, the former members of the losers' club, who have grown up and moved away from derry, are brought back together by a devastating phone call.",
         genre: "horror",
         director: "andy muschietti",
-        duration: "140"
+        duration: "140",
+        videoId: "xhJ5P7Up3jA"
     },
     {
         _id: 15,
@@ -148,7 +162,8 @@ export const fullMovies = [
         description: "a boy is given the ability to become an adult superhero in times of need with a single magic word.",
         genre: "fantasy",
         director: "david f. sandberg",
-        duration: "131"
+        duration: "131",
+        videoId: "go6GEIrcvFY"
     },
     {
         _id: 16,
@@ -157,7 +172,8 @@ export const fullMovies = [
         description: "cdddv fe fd f david leitchdavid leitchdavid leitch ds g",
         genre: "adventure",
         director: "david leitch",
-        duration: "120"
+        duration: "120",
+        videoId: "HZ7PAyCDwEg"
     },
     {
         _id: 17,
@@ -166,7 +182,8 @@ export const fullMovies = [
         description: "exposure follows a rookie detroit african-american female cop who stumbles upon corrupt officers who are murdering a drug dealer, an incident captured by her body cam. they pursue her through the night in an attempt to destroy the footage, but to make matters worse, they've tipped off a criminal gang that she's responsible for the dealer's death.",
         genre: "drama",
         director: "deon taylor",
-        duration: "128"
+        duration: "128",
+        videoId: "QCfSeVCr7ng"
     },
     {
         _id: 18,
@@ -175,12 +192,13 @@ export const fullMovies = [
         description: "miles morales is juggling his life between being a high school student and being a spider-man. when wilson \"kingpin\" fisk uses a super collider, others from across the spider-verse are transported to this dimension.",
         genre: "comedy",
         director: "bob persichetti, peter ramsey, rodney rothman",
-        duration: "117"
+        duration: "117",
+        videoId: "ApXoWvfEYVU"
     }
 ];
 
 export const getMovie = (movieId) => {
-    return fullMovies.find(movie => movie._id === movieId);
+    return fullMovies.find(movie => movie._id == movieId);
 };
 
 export const nowShowing = fullMovies.filter(movie => movie._id > 0 && movie._id < 10);

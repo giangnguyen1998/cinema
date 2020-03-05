@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState, forwardRef} from 'react';
 import classnames from 'classnames';
-import { Rating } from '@material-ui/lab';
+import {Rating} from '@material-ui/lab';
 import {
     Box,
     Typography,
@@ -8,11 +8,13 @@ import {
     makeStyles,
     withStyles
 } from '@material-ui/core';
-import { textTruncate } from '../../../../../ultils/utils';
-import { Link } from 'react-router-dom';
+import {textTruncate} from '../../../../../ultils/utils';
+import {Link} from 'react-router-dom';
 import ArrowRightAlt from '@material-ui/icons/ArrowRightAlt';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import styles from './styles';
+import "../../../../../assets/scss/model-video.css";
+import ModalVideo from 'react-modal-video';
 
 const useStyles = makeStyles(styles);
 
@@ -25,10 +27,17 @@ const StyledRating = withStyles({
     }
 })(Rating);
 
+const LinkBehavior = forwardRef(((props, ref) => (
+    <Link to={`booking/${props.link}`} {...props} {...ref} />
+)));
+
 const MovieBanner = (props) => {
-    const { movie, fullDescription } = props;
+    const [open, setOpen] = useState(false);
+    const {movie, fullDescription} = props;
     const classes = useStyles(props);
     if (!movie) return null;
+
+    const openModal = () => setOpen(true);
 
     return (
         <div className={classes.movieHero}>
@@ -50,7 +59,7 @@ const MovieBanner = (props) => {
                                 value={4}
                                 readOnly
                                 size="small"
-                                emptyIcon={<StarBorderIcon fontSize="inherit" />}
+                                emptyIcon={<StarBorderIcon fontSize="inherit"/>}
                             />
                         </Box>
                     )}
@@ -78,6 +87,22 @@ const MovieBanner = (props) => {
                     <Typography className={classes.genre} variant="body1" color="inherit">
                         {movie.genre}
                     </Typography>
+                    {fullDescription && (
+                        <Box style={{marginTop: 20}}>
+                            <br/>
+                            <ModalVideo channel='youtube' isOpen={open} videoId={movie.videoId}
+                                        onClose={() => setOpen(false)}/>
+                            <Button variant="outlined" size="small" color="primary" style={{
+                                marginRight: 10,
+                            }} onClick={openModal}>
+                                Watch Trailer
+                            </Button>
+                            <Button variant="contained" size={"small"} color={"primary"} link={movie._id}
+                                    component={LinkBehavior}>
+                                Buy Tickets
+                            </Button>
+                        </Box>
+                    )}
                 </header>
             </div>
             <div
@@ -87,18 +112,11 @@ const MovieBanner = (props) => {
                 }}
             />
             <div className={classes.movieActions}>
-                {fullDescription ? (
-                    <Link to={`booking/${movie._id}`} style={{ textDecoration: 'none' }}>
-                        <Button variant="contained" className={classes.button}>
-                            Buy Tickets
-                            <ArrowRightAlt className={classes.buttonIcon} />
-                        </Button>
-                    </Link>
-                ) : (
-                    <Link to={`movie/${movie._id}`} style={{ textDecoration: 'none' }}>
+                {!fullDescription && (
+                    <Link to={`movie/${movie._id}`} style={{textDecoration: 'none'}}>
                         <Button className={classnames(classes.button, classes.learnMore)}>
                             Learn More
-                            <ArrowRightAlt className={classes.buttonIcon} />
+                            <ArrowRightAlt className={classes.buttonIcon}/>
                         </Button>
                     </Link>
                 )}
