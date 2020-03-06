@@ -18,5 +18,7 @@
     <orderEntry type="library" name="@types/redux-actions" level="application" />
     <orderEntry type="library" name="@types/material-ui" level="application" />
     <orderEntry type="library" name="cssinjs" level="project" />
+    <orderEntry type="library" name="@types/materialize-css" level="application" />
+    <orderEntry type="library" name="@types/material-design-lite" level="application" />
   </component>
 </module>

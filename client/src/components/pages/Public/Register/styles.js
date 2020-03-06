@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     },
     bgWrapper: {
         [theme.breakpoints.down('md')]: {
-            display: 'none'
+            display: 'none',
         }
     },
     bg: {
@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        opacity: 0.5
+        opacity: 0.5,
     },
 
     content: {

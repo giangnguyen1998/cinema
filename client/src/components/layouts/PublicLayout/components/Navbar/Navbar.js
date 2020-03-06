@@ -15,10 +15,11 @@ const Navbar = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-        //eslint-disable-next-line
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
+        //eslint-disable-next-line
     }, []);
 
     const handleScroll = () => {
@@ -48,10 +49,10 @@ const Navbar = () => {
                     <RouterLink className={classes.navLink} to="/">
                         Home
                     </RouterLink>
-                    <RouterLink className={classes.navLink} to="/">
+                    <RouterLink className={classes.navLink} to="/movies/category/nowShowing">
                         Now Showing
                     </RouterLink>
-                    <RouterLink className={classes.navLink} to="/">
+                    <RouterLink className={classes.navLink} to="/movies/category/comingSoon">
                         Coming Soon
                     </RouterLink>
                     <RouterLink className={classes.navLink} to="/">
@@ -131,14 +132,14 @@ const Navbar = () => {
                         <li className={classes.innerNavListItem}>
                             <RouterLink
                                 className={classes.innerNavLink}
-                                to="/">
+                                to="/movies/category/nowShowing">
                                 Now Showing
                             </RouterLink>
                         </li>
                         <li className={classes.innerNavListItem}>
                             <RouterLink
                                 className={classes.innerNavLink}
-                                to="/">
+                                to="/movies/category/comingSoon">
                                 Coming Soon
                             </RouterLink>
                         </li>

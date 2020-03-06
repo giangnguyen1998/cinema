@@ -8,12 +8,12 @@ import WithLayoutRoute from "./components/routing/WithLayoutRoute";
 import PublicLayout from "./components/layouts/PublicLayout/PublicLayout";
 
 // Register - Login
-// const SignUp = lazy(() => import((`./components/pages/SignUp`)));
 const RegisterPage = lazy(() => import(`./components/pages/Public/Register/RegisterPage`));
 const LoginPage = lazy(() => import(`./components/pages/Public/Login/LoginPage`));
 const HomePage = lazy(() => import((`./components/pages/Public/Home/HomePage`)));
 const MoviePage = lazy(() => import(`./components/pages/Public/Movie/MoviePage`));
 const NotFound = lazy(() => import(`./components/pages/Public/NotFound/NotFound`));
+const MovieCategoryPage = lazy(() => import(`./components/pages/Public/MovieCategoryPage/MovieCategoryPage`));
 
 const Routes = () => {
     return (
@@ -47,6 +47,13 @@ const Routes = () => {
                         layout={PublicLayout}
                         layoutProps={{withFooter: false}}
                         component={MoviePage}
+                    />
+
+                    <WithLayoutRoute
+                        exact
+                        path="/movies/category/:category"
+                        layout={PublicLayout}
+                        component={MovieCategoryPage}
                     />
 
                     <WithLayoutRoute

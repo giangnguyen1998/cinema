@@ -1,16 +1,19 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import MovieBanner from '../components/MovieBanner/MovieBanner';
 import PropsTypes from "prop-types";
-import {
-    getMovie
-} from "../../../data/MovieDataService";
+import MovieContext from "../../../../context/movie/movieContext";
 
 const MoviePage = (props) => {
-    const {match: {params}} = props;
-    // componentWillUnmount() {
-    //     this.props.onSelectMovie(null);
-    // }
-    const movie = getMovie(params.id);
+    const movieContext = useContext(MovieContext);
+    const {getMovieById, clearMovie, movie} = movieContext;
+    useEffect(() => {
+        getMovieById(props.match.params.id);
+        return () => {
+            clearMovie();
+        }
+        //eslint-disable-next-line
+    }, []);
+
     return <>{movie && <MovieBanner movie={movie} fullDescription/>}</>;
 };
 

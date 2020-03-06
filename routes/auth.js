@@ -8,7 +8,7 @@ const {check, validationResult} = require("express-validator");
 
 const User = require("../models/User");
 
-//@route    GET api/users
+//@route    GET api/auth
 //@desc     Get logged in user
 //@access   Private
 router.get("/", auth, async (req, res) => {
@@ -50,7 +50,8 @@ router.post("/", [
 
         const payload = {
             user: {
-                id: user.id
+                id: user.id,
+                role: user.role
             }
         };
 

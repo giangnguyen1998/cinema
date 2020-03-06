@@ -5,6 +5,7 @@ import './assets/scss/index.css';
 
 import AuthState from "./context/auth/AuthState";
 import AlertState from "./context/alert/AlertState";
+import MovieState from "./context/movie/MovieState";
 import Alerts from "./components/layouts/Alerts";
 import setAuthToken from "./ultils/setAuthToken";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -22,13 +23,15 @@ const App = () => {
     return (
         <AuthState>
             <AlertState>
-                <Router>
-                    <ThemeProvider theme={theme}>
-                        <CssBaseline />
-                        <Alerts/>
-                        <Routes/>
-                    </ThemeProvider>
-                </Router>
+                <MovieState>
+                    <Router>
+                        <ThemeProvider theme={theme}>
+                            <CssBaseline />
+                            <Alerts/>
+                            <Routes/>
+                        </ThemeProvider>
+                    </Router>
+                </MovieState>
             </AlertState>
         </AuthState>
     );
