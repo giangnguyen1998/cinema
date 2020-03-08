@@ -1,6 +1,8 @@
 import React from 'react';
 import {makeStyles, Grid, Typography, Container} from '@material-ui/core';
 import Account from "../../Admin/Account/Account";
+import MyReservationTable from "./components/MyReservationTable/MyReservationTable";
+import {cinemas, movies, myReservations} from "../../../data/MovieDataService";
 
 const useStyles = makeStyles(theme => ({
     title: {
@@ -23,25 +25,6 @@ const Dashboard = () => {
     return (
         <Container>
             <Grid container spacing={2}>
-                {/*{!myReservations.length && (*/}
-                {/*    <>*/}
-                {/*        <Grid item xs={12}>*/}
-                {/*            <Typography*/}
-                {/*                className={classes.title}*/}
-                {/*                variant="h2"*/}
-                {/*                color="inherit">*/}
-                {/*                My Reservations*/}
-                {/*            </Typography>*/}
-                {/*        </Grid>*/}
-                {/*        <Grid item xs={12}>*/}
-                {/*            <MyReservationTable*/}
-                {/*                reservations={myReservations}*/}
-                {/*                movies={movies}*/}
-                {/*                cinemas={cinemas}*/}
-                {/*            />*/}
-                {/*        </Grid>*/}
-                {/*    </>*/}
-                {/*)}*/}
                 <Grid item xs={12}>
                     <Typography className={classes.title} variant="h2" color="inherit">
                         My Account
@@ -50,6 +33,25 @@ const Dashboard = () => {
                 <Grid item xs={12}>
                     <Account/>
                 </Grid>
+                {!!myReservations.length && (
+                    <>
+                        <Grid item xs={12}>
+                            <Typography
+                                className={classes.title}
+                                variant="h2"
+                                color="inherit">
+                                My Reservations
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <MyReservationTable
+                                reservations={myReservations}
+                                movies={movies}
+                                cinemas={cinemas}
+                            />
+                        </Grid>
+                    </>
+                )}
             </Grid>
         </Container>
     );

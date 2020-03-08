@@ -1,7 +1,9 @@
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
 const useStyle = makeStyles(theme => ({
-    root: {},
+    root: {
+        marginBottom: theme.spacing(8)
+    },
     tableRow: {
         height: '64px'
     },

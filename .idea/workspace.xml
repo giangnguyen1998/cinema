@@ -2,68 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09050071-f454-4ea5-a7d7-4d9077b8f157" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/images/cards.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/images/logo-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Paper/Paper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Portlet/Portlet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/PortletContent/PortletContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/PortletFooter/PortletFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/PortletHeader/PortletHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/PortletLabel/PortletLabel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/Account.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/AccountDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/AccountProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/ultils/setBackgroundAlert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlewares/authRole.middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/MyReservationTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/Alerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/Alerts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Home/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Home/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/MovieCategoryPage/MovieCategoryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/MovieCategoryPage/MovieCategoryPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Register/components/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Register/components/RegisterForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Register/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Register/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonHome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonMovieCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonMovieCategory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/PrivateWithLayoutRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/Types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/Types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/alert/alertContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/alert/alertContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/movie/MovieState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/movie/MovieState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/movie/movieContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/movie/movieContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/auth.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/movie.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/movies.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/Account.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +110,8 @@
       <workItem from="1583547883763" duration="2118000" />
       <workItem from="1583566716452" duration="3507000" />
       <workItem from="1583570236456" duration="16529000" />
-      <workItem from="1583630126531" duration="24334000" />
+      <workItem from="1583630126531" duration="24576000" />
+      <workItem from="1583673448634" duration="3908000" />
     </task>
     <servers />
   </component>

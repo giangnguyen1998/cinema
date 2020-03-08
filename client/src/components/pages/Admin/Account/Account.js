@@ -29,7 +29,7 @@ const Account = () => {
 
     if (loading) {
         return (
-            <Grid container justify={"center"} alignItems={"flex-start"} style={{height: 400}}>
+            <Grid container justify={"center"} alignItems={"flex-start"} style={{height: 320}}>
                 <CircularProgress/>
             </Grid>
         )
