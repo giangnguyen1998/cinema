@@ -1,13 +1,17 @@
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
-export default makeStyles(theme => ({
-    root: {
-        padding: theme.spacing(4),
-        background: theme.palette.background.default,
-        color: theme.palette.contrastText
-    },
+const useStyles =  makeStyles(theme => ({
     copyright: {
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(0.5)
+    },
+    logo: {
+        maxHeight: '2.4rem',
+        width: 'auto',
+        fontSize: '2rem',
+        letterSpacing: '1px',
+        color: theme.palette.common.white
     }
 }));
+
+export default useStyles;

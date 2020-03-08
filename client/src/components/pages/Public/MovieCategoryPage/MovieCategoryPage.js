@@ -57,6 +57,7 @@ function MovieCategoryPage(props) {
                                 container
                                 item
                                 xs={12}
+                                style={{marginBottom: 50}}
                                 direction="column"
                                 alignItems="center"
                                 justify="center"

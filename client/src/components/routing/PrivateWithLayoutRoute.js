@@ -2,18 +2,22 @@ import React, {useContext} from "react";
 import {Route, Redirect} from "react-router-dom";
 import AuthContext from "../../context/auth/authContext";
 
-const PrivateRoute = ({component: Component, ...rest}) => {
+const PrivateWithLayoutRoute = (props) => {
+    const { layout: Layout, component: Component, layoutProps, ...rest } = props;
+
     const authContext = useContext(AuthContext);
     const {isAuthenticated, loading} = authContext;
     const isAuth = (isAuthenticated === "true");
 
     return (
-        <Route {...rest} render={props => !isAuth && !loading ? (
+        <Route {...rest} render={matchProps => !isAuth && !loading ? (
             <Redirect to={"/login"} />
         ) : (
-            <Component {...props} />
+            <Layout {...layoutProps}>
+                <Component {...matchProps} />
+            </Layout>
         )} />
     );
 };
 
-export default PrivateRoute;
+export default PrivateWithLayoutRoute;

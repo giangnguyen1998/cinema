@@ -2,34 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09050071-f454-4ea5-a7d7-4d9077b8f157" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/MovieCategoryPage/MovieCategoryPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/ResponsiveMovieCard/ResponsiveMovieCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/ResponsiveMovieCard/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonHome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonMovieCategory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/context/movie/MovieState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/context/movie/movieContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/context/movie/movieReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/movie-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/movie-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/css/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/cards.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/logo-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Paper/Paper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Portlet/Portlet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/PortletContent/PortletContent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/PortletFooter/PortletFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/PortletHeader/PortletHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/PortletLabel/PortletLabel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/Account.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/AccountDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/AccountProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ultils/setBackgroundAlert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/authRole.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/robots.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ButtonDisabled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/Copyright.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/Alerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/Alerts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Home/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Home/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Home/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Home/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/LoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/MovieCategoryPage/MovieCategoryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/MovieCategoryPage/MovieCategoryPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Register/components/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Register/components/RegisterForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Register/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Register/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/SignUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonMovieCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonMovieCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routing/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routing/PrivateWithLayoutRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/context/Types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/Types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Movie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/alert/alertContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/alert/alertContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/movie/MovieState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/movie/MovieState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/movie/movieContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/movie/movieContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/auth.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/movie.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/movies.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.route.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +106,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/public" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,14 +120,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\react\cinema\client\src\components\pages\Public\Dashboard\components\MyReservationTable" />
       <recent name="E:\react\cinema\client\src\components\pages\Public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\react\cinema\client\src\assets\images" />
       <recent name="E:\react\cinema\client\public" />
       <recent name="C:\Users\Nguye\WebstormProjects\cinema\client\src\components\pages\HomePage\Components" />
       <recent name="C:\Users\Nguye\WebstormProjects\cinema\client\src" />
       <recent name="C:\Users\Nguye\WebstormProjects\cinema\client\src\components\layouts\MainLayout\components\Navbar" />
-      <recent name="C:\Users\Nguye\WebstormProjects\cinema\client\src\components\layouts\MainLayout\components\Footer" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -124,6 +159,12 @@
       <workItem from="1583373584007" duration="16176000" />
       <workItem from="1583404890990" duration="18157000" />
       <workItem from="1583453555563" duration="4184000" />
+      <workItem from="1583461418696" duration="6016000" />
+      <workItem from="1583495419380" duration="8145000" />
+      <workItem from="1583547883763" duration="2118000" />
+      <workItem from="1583566716452" duration="3507000" />
+      <workItem from="1583570236456" duration="16529000" />
+      <workItem from="1583630126531" duration="24334000" />
     </task>
     <servers />
   </component>
@@ -135,10 +176,10 @@
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="323" y="91" key="#Usage_Scope/0.0.1462.864@0.0.1462.864" timestamp="1582992954284" />
-    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583322264380">
+    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583634667017">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1536.824@0.40.1536.824" timestamp="1583322264380" />
+    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1536.824@0.40.1536.824" timestamp="1583634667017" />
     <state x="461" y="212" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1583028004256">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
@@ -151,12 +192,12 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="406" y="225" key="EditFileWatcherDialog/0.40.1536.824@0.40.1536.824" timestamp="1583331741807" />
-    <state x="538" y="187" key="FileChooserDialogImpl" timestamp="1583239155821">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="538" y="218" key="FileChooserDialogImpl" timestamp="1583551720373">
+      <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="512" y="187" key="FileChooserDialogImpl/0.0.1462.864@0.0.1462.864" timestamp="1582993149821" />
     <state x="538" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1583239155821" />
-    <state x="538" y="218" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1583200230695" />
+    <state x="538" y="218" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1583551720373" />
     <state width="1515" height="202" key="GridCell.Tab.0.bottom" timestamp="1583313768702">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -177,11 +218,11 @@
     </state>
     <state width="1513" height="203" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583224738839" />
     <state width="1515" height="202" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1583313768702" />
-    <state x="292" y="74" key="SettingsEditor" timestamp="1583409738110">
+    <state x="292" y="74" key="SettingsEditor" timestamp="1583567783643">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="240" y="75" key="SettingsEditor/0.0.1462.864@0.0.1462.864" timestamp="1583028011998" />
-    <state x="292" y="74" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1583409738110" />
+    <state x="292" y="74" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1583567783643" />
     <state x="361" y="161" key="Vcs.Push.Dialog.v2" timestamp="1583308413565">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -195,9 +236,9 @@
     </state>
     <state x="388" y="197" key="run.anything.popup/0.0.1462.864@0.0.1462.864" timestamp="1582990778058" />
     <state x="408" y="228" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1583456231693" />
-    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1583056406629">
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1583634005616">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1583056406629" />
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1583634005616" />
   </component>
 </project>

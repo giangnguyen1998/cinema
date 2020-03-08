@@ -32,6 +32,7 @@
     "uuid": "^7.0.1"
   },
   "devDependencies": {
+    "moment": "^2.24.0",
     "prop-types": "latest"
   },
   "eslintConfig": {

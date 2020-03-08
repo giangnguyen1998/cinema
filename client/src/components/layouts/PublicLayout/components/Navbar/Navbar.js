@@ -70,7 +70,7 @@ const Navbar = () => {
                                         to={
                                             user.role !== 'guest'
                                                 ? '/'
-                                                : '/'
+                                                : '/myDashboard'
                                         }>
                                         Dashboard
                                     </RouterLink>

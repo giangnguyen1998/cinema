@@ -3,6 +3,7 @@ import AlertContext from "../../context/alert/alertContext";
 import {makeStyles} from "@material-ui/core/styles";
 import Snackbar from "@material-ui/core/Snackbar";
 import Alert from "@material-ui/lab/Alert";
+import setBackgroundAlert from "../../ultils/setBackgroundAlert";
 
 const Alerts = () => {
     const alertContext = useContext(AlertContext);
@@ -27,7 +28,9 @@ const Alerts = () => {
                 <Snackbar open={open} autoHideDuration={6000}
                           anchorOrigin={{vertical, horizontal}}
                           onClose={handleClose}>
-                    <Alert onClose={handleClose} severity={alerts.type}>
+                    <Alert onClose={handleClose}
+                           style={setBackgroundAlert(alerts.type)}
+                           severity={alerts.type}>
                         {alerts.msg}
                     </Alert>
                 </Snackbar>
@@ -42,7 +45,7 @@ const useStyles = makeStyles(theme => ({
         '& > * + *': {
             marginTop: theme.spacing(2),
         },
-    },
+    }
 }));
 
 export default Alerts;

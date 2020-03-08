@@ -6,6 +6,7 @@ import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import AlertContext from "../../../../../context/alert/alertContext";
 import AuthContext from "../../../../../context/auth/authContext";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 const LoginForm = (props) => {
     const classes = useStyles();
@@ -18,7 +19,7 @@ const LoginForm = (props) => {
 
     const {email, password} = user;
     const {setAlert} = alertContext;
-    const {login, error, clearErrors, isAuthenticated} = authContext;
+    const {login, error, clearErrors, isAuthenticated, loading} = authContext;
     const isAuth = (isAuthenticated === "true");
 
     useEffect(() => {
@@ -80,14 +81,18 @@ const LoginForm = (props) => {
                 />
             </div>
 
-            <Button
-                className={classes.loginButton}
-                color="primary"
-                type="submit"
-                size="large"
-                variant="contained">
-                Login now
-            </Button>
+            <div className={classes.wrapper}>
+                <Button
+                    className={classes.loginButton}
+                    color="primary"
+                    type="submit"
+                    size="large"
+                    disabled={loading}
+                    variant="contained">
+                    Login now
+                </Button>
+                {loading && <CircularProgress size={24} className={classes.buttonProgress} />}
+            </div>
             <Typography className={classes.register} variant="body1">
                 Don't have an account?
                 <RouterLink className={classes.registerUrl} to="/register">

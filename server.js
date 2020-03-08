@@ -1,15 +1,19 @@
-const express = require("express");
-const connectDB = require("./config/db");
-const proxy = require("http-proxy-middleware");
-const cors = require("cors");
-
+import express from "express";
+import bodyParser from "body-parser";
+import connectDB from "./config/db";
+import cors from "cors";
+//import router
+import UsersRoute from "./routes/users.route";
+import MoviesRoute from "./routes/movies.route";
+import AuthRoute from "./routes/auth.route";
+//init express
 const app = express();
-
-//Init Middleware
-app.use(express.json({extended: false}));
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({extended: false}));
+// parse application/json
+app.use(bodyParser.json());
 //connect database
-connectDB();
-
+const connect = connectDB();
 //enable cors
 app.use(cors());
 
@@ -18,11 +22,11 @@ app.get("/", (req, res) => {
 });
 
 //Define Routes
-app.use("/api/users", require("./routes/users"));
-app.use("/api/auth", require("./routes/auth"));
-app.use("/api/movies", require("./routes/movies"));
+app.use("/api/users", UsersRoute);
+app.use("/api/auth", AuthRoute);
+app.use("/api/movies", MoviesRoute);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);

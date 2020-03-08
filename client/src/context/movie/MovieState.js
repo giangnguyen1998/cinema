@@ -11,15 +11,22 @@ import {
     CLEAR_MOVIE
 } from "../Types";
 
+const init = (initialState) => {
+    return {
+        loading: false,
+        movies: []
+    };
+};
+
 const MovieState = (props) => {
     const initialState = {
-        loading: false,
-        movies: [],
+        loading: null,
+        movies: null,
         movie: null,
         error: null
     };
 
-    const [state, dispatch] = useReducer(movieReducer, initialState);
+    const [state, dispatch] = useReducer(movieReducer, initialState, init);
 
     //Get Movies
     const getMovies = (category) => {

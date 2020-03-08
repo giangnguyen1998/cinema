@@ -6,6 +6,8 @@ import axios from "axios";
 import {
     REGISTER_SUCCESS,
     REGISTER_FAIL,
+    UPDATE_SUCCESS,
+    UPDATE_FAIL,
     USER_LOADED,
     AUTH_ERROR,
     LOGIN_SUCCESS,
@@ -14,18 +16,27 @@ import {
     CLEAR_ERRORS, SET_LOADING
 } from "../Types";
 
-const AuthState = (props) => {
-    const initialState = {
+const init = (initialState) => {
+    return {
         token: localStorage.getItem("token"),
         isAuthenticated: localStorage.getItem("isAuthenticated"),
-        loading: false,
+        loading: false
+    };
+};
+
+const AuthState = (props) => {
+    const initialState = {
+        token: null,
+        isAuthenticated: null,
+        loading: null,
         user: null,
+        msg: null,
         error: null
     };
 
-    const [state, dispatch] = useReducer(authReducer, initialState);
+    const [state, dispatch] = useReducer(authReducer, initialState, init);
 
-    //Load User
+    //Load UserModel
     const loadUser = () => {
         if (localStorage.token) {
             setAuthToken(localStorage.token);
@@ -50,7 +61,7 @@ const AuthState = (props) => {
             });
     };
 
-    //Register User
+    //Register UserModel
     const register = (formData) => {
         const config = {
             headers: {
@@ -77,7 +88,7 @@ const AuthState = (props) => {
                 });
             });
     };
-    //Login User
+    //Login UserModel
     const login = (formData) => {
         const config = {
             headers: {
@@ -104,6 +115,33 @@ const AuthState = (props) => {
                 });
             });
     };
+    //update user
+    const update = (_id, formData) => {
+        const config = {
+            headers: {
+                "Content-Type": "application/json"
+            }
+        };
+
+        dispatch({
+            type: SET_LOADING
+        });
+        axios.put(`/api/users/${_id}`, formData, config)
+            .then(res => {
+                dispatch({
+                    type: UPDATE_SUCCESS,
+                    payload: res.data
+                });
+
+                loadUser();
+            })
+            .catch(err => {
+                dispatch({
+                    type: UPDATE_FAIL,
+                    payload: err.response.data.msg
+                });
+            });
+    };
     //Logout
     const logout = () => dispatch({type: LOGOUT});
     //Clear Errors
@@ -117,7 +155,9 @@ const AuthState = (props) => {
                 loading: state.loading,
                 user: state.user,
                 error: state.error,
+                msg: state.msg,
                 register,
+                update,
                 loadUser,
                 login,
                 logout,

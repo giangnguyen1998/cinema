@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Switch} from 'react-router-dom';
 
 import Loading from "./components/Loading/Loading";
 import WithLayoutRoute from "./components/routing/WithLayoutRoute";
-// import PrivateRoute from "./components/routing/PrivateRoute";
+import PrivateWithLayoutRoute from "./components/routing/PrivateWithLayoutRoute";
 
 import PublicLayout from "./components/layouts/PublicLayout/PublicLayout";
 
@@ -14,6 +14,7 @@ const HomePage = lazy(() => import((`./components/pages/Public/Home/HomePage`)))
 const MoviePage = lazy(() => import(`./components/pages/Public/Movie/MoviePage`));
 const NotFound = lazy(() => import(`./components/pages/Public/NotFound/NotFound`));
 const MovieCategoryPage = lazy(() => import(`./components/pages/Public/MovieCategoryPage/MovieCategoryPage`));
+const Dashboard = lazy(() => import(`./components/pages/Public/Dashboard/Dashboard`));
 
 const Routes = () => {
     return (
@@ -54,6 +55,13 @@ const Routes = () => {
                         path="/movies/category/:category"
                         layout={PublicLayout}
                         component={MovieCategoryPage}
+                    />
+
+                    <PrivateWithLayoutRoute
+                        exact
+                        path="/myDashboard"
+                        layout={PublicLayout}
+                        component={Dashboard}
                     />
 
                     <WithLayoutRoute

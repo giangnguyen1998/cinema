@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-const ContactSchema = mongoose.Schema({
+const MovieSchema = mongoose.Schema({
     title: {
         type: String,
         required: true
@@ -33,11 +33,9 @@ const ContactSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    finished: {
-        type: Date
-    },
     started: {
-        type: Date
+        type: Date,
+        required: true
     },
     isActive: {
         type: Boolean,
@@ -58,7 +56,13 @@ const ContactSchema = mongoose.Schema({
     updatedBy: {
         type: String,
         required: true
+    },
+    category: {
+        type: String,
+        required: true
     }
 });
 
-module.exports = mongoose.model('movie', ContactSchema);
+const MovieModel = mongoose.model("movie", MovieSchema);
+
+export default MovieModel;

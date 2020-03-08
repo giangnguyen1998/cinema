@@ -62,7 +62,6 @@ export default theme => ({
         fontSize: '16px',
         marginTop: theme.spacing(1)
     },
-
     duration: {
         display: 'inline-block',
         marginTop: theme.spacing(2),
@@ -73,6 +72,11 @@ export default theme => ({
         display: 'inline-block',
         color: '#cee4fd',
         marginLeft: theme.spacing(2)
+    },
+    release: {
+        display: 'inline-block',
+        color: '#cee4fd',
+        marginTop: theme.spacing(2)
     },
     descriptionText: {
         color: '#cfd6e1',

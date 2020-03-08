@@ -57,7 +57,7 @@ const SkeletonHome = () => {
             <Typography className={classes.h2} variant="h2" color="inherit">
                 Coming Soon
             </Typography>
-            <Grid container>
+            <Grid container style={{paddingBottom: 50}}>
                 <Grid item style={{margin: "0 70px 0 60px"}}>
                     <Skeleton variant="rect" width={400} height={370}/>
                     <Skeleton variant="text" width={300} height={30}/>

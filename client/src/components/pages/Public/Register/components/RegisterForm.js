@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import React, {useContext, useEffect, useState} from "react";
 import AlertContext from "../../../../../context/alert/alertContext";
 import AuthContext from "../../../../../context/auth/authContext";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 const RegisterForm = (props) => {
     const {classes} = props;
@@ -27,7 +28,7 @@ const RegisterForm = (props) => {
             props.history.push("/");
         }
 
-        if (error === 'User already exists') {
+        if (error === 'UserModel already exists') {
             setAlert(error, "error");
             clearErrors();
         }
@@ -137,15 +138,18 @@ const RegisterForm = (props) => {
                 </div>
             </div>
 
-            <Button
-                className={classes.registerButton}
-                color="primary"
-                disabled={!isChecked}
-                type="submit"
-                size="large"
-                variant="contained">
-                Register now
-            </Button>
+            <div className={classes.wrapper}>
+                <Button
+                    className={classes.registerButton}
+                    color="primary"
+                    disabled={!isChecked || loading}
+                    type="submit"
+                    size="large"
+                    variant="contained">
+                    Register now
+                </Button>
+                {loading && <CircularProgress size={24} className={classes.buttonProgress} />}
+            </div>
 
             <Typography className={classes.login} variant="body1">
                 Have an account?{' '}

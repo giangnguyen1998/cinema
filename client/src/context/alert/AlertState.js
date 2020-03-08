@@ -6,13 +6,19 @@ import {
     SET_ALERT,
 } from "../Types";
 
+const init = (initialState) => {
+    return {
+        open: false
+    }
+};
+
 const AlertState = (props) => {
     const initialState = {
         alerts: null,
-        open: false
+        open: null
     };
 
-    const [state, dispatch] = useReducer(alertReducer, initialState);
+    const [state, dispatch] = useReducer(alertReducer, initialState, init);
 
     //Set alert
     const setAlert = (msg, type) => {

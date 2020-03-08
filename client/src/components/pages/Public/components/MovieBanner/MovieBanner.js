@@ -1,5 +1,6 @@
-import React, {useState, forwardRef} from 'react';
+import React, {useState, forwardRef, Fragment} from 'react';
 import classnames from 'classnames';
+import moment from 'moment';
 import {Rating} from '@material-ui/lab';
 import {
     Box,
@@ -36,6 +37,10 @@ const MovieBanner = (props) => {
     const {movie, fullDescription} = props;
     const classes = useStyles(props);
     if (!movie) return null;
+
+    const date = new Date(movie.started.toString());
+    // noinspection JSValidateTypes
+    const releaseDay = moment(movie.started).format('DD/MM/YYYY');
 
     const openModal = () => setOpen(true);
 
@@ -88,20 +93,26 @@ const MovieBanner = (props) => {
                         {movie.genre}
                     </Typography>
                     {fullDescription && (
-                        <Box style={{marginTop: 20}}>
+                        <Fragment>
                             <br/>
-                            <ModalVideo channel='youtube' isOpen={open} videoId={movie.videoId}
-                                        onClose={() => setOpen(false)}/>
-                            <Button variant="outlined" size="small" color="primary" style={{
-                                marginRight: 10,
-                            }} onClick={openModal}>
-                                Watch Trailer
-                            </Button>
-                            <Button variant="contained" size={"small"} color={"primary"} link={movie._id}
-                                    component={LinkBehavior}>
-                                Buy Tickets
-                            </Button>
-                        </Box>
+                            <Typography className={classes.release} variant="body1" color="inherit">
+                                {date > (new Date()) ? "Coming Soon" : "Now showing"} : {releaseDay}
+                            </Typography>
+                            <Box style={{marginTop: 20}}>
+                                <br/>
+                                <ModalVideo channel='youtube' isOpen={open} videoId={movie.videoId}
+                                            onClose={() => setOpen(false)}/>
+                                <Button variant="outlined" size="small" color="primary" style={{
+                                    marginRight: 10,
+                                }} onClick={openModal}>
+                                    Watch Trailer
+                                </Button>
+                                <Button variant="contained" size={"small"} color={"primary"} link={movie._id}
+                                        component={LinkBehavior}>
+                                    Buy Tickets
+                                </Button>
+                            </Box>
+                        </Fragment>
                     )}
                 </header>
             </div>

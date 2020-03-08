@@ -12,6 +12,7 @@ const HomePage = () => {
     const classes = useStyles();
     const authContext = useContext(AuthContext);
     const movieContext = useContext(MovieContext);
+    //eslint-disable-next-line
     const {isAuthenticated, loadUser} = authContext;
     const {
         getMovies,
@@ -22,7 +23,7 @@ const HomePage = () => {
 
     useEffect(() => {
         if (isAuthenticated === "true") {
-            authContext.loadUser();
+            loadUser();
         }
 
         getMovies("");

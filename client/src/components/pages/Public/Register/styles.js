@@ -1,4 +1,5 @@
 import makeStyles from "@material-ui/core/styles/makeStyles";
+import {red} from "@material-ui/core/colors";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -12,6 +13,18 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('md')]: {
             display: 'none',
         }
+    },
+    wrapper: {
+        margin: theme.spacing(1),
+        position: 'relative',
+    },
+    buttonProgress: {
+        color: red[500],
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        marginTop: -5,
+        marginLeft: -5,
     },
     bg: {
         backgroundColor: theme.palette.common.neutral,

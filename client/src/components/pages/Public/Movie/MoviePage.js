@@ -12,7 +12,7 @@ const MoviePage = (props) => {
             clearMovie();
         }
         //eslint-disable-next-line
-    }, []);
+    }, [props.match.params.id]);
 
     return <>{movie && <MovieBanner movie={movie} fullDescription/>}</>;
 };
