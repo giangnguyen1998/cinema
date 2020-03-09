@@ -29,7 +29,7 @@ const AccountProfile = (props) => {
                     </div>
                     <Avatar
                         className={classes.avatar}
-                        src='https://instagram.fhan2-4.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/69371979_491930528051914_5261482825231877185_n.jpg?_nc_ht=instagram.fhan2-4.fna.fbcdn.net&_nc_cat=110&_nc_ohc=B8xQ_7G19-sAX_42KtC&oh=a5d0f371bf0b229b59bd7a8e572eba41&oe=5E948D53'
+                        src="https://lh6.googleusercontent.com/proxy/fuL4VSMO_6YAYw2xxrOzNH1DziuxtWnxsdTjG2hpcR1LU_wktH3PWbW30CTfARSk3c1L1jQ2URCh-PSoeQSBFmRtOB-9jiFvRxR0L7XCRx1rERegCVvROpnuNWnQEKRPDkO6f8K2S-fMZNB0YHZzA3SF55REJL8V2ZerBXFSnkjEG-AhcvM-OW5Lta4K5-p0JqvtngIYPgjLXH9KNnFlwgR5jSAkuIYZSf-kGovMlbD3xVeI"
                     />
                 </div>
             </PortletContent>

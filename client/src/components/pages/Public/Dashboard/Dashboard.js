@@ -31,7 +31,7 @@ const Dashboard = () => {
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <Account/>
+                    <Account />
                 </Grid>
                 {!!myReservations.length && (
                     <>

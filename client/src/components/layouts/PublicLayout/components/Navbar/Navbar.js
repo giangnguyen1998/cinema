@@ -55,7 +55,7 @@ const Navbar = () => {
                     <RouterLink className={classes.navLink} to="/movies/category/comingSoon">
                         Coming Soon
                     </RouterLink>
-                    <RouterLink className={classes.navLink} to="/">
+                    <RouterLink className={classes.navLink} to="/cinemas">
                         Cinemas
                     </RouterLink>
                 </div>
@@ -144,7 +144,7 @@ const Navbar = () => {
                             </RouterLink>
                         </li>
                         <li className={classes.innerNavListItem}>
-                            <RouterLink className={classes.innerNavLink} to="/">
+                            <RouterLink className={classes.innerNavLink} to="/cinemas">
                                 Cinemas
                             </RouterLink>
                         </li>

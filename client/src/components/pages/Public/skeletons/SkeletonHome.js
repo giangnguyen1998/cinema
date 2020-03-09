@@ -18,7 +18,7 @@ const SkeletonHome = () => {
     const classes = useStyles();
     return (
         <Fragment>
-            <Box height="85vh" style={{backgroundColor: "rgba(41, 150, 243, .1)", opacity: 0.5}}/>
+            <Skeleton variant="rect" height="85vh"/>
             <Box height={60}/>
             <Typography className={classes.h2} variant="h2" color="inherit">
                 Suggested for you

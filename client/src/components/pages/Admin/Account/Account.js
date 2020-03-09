@@ -4,8 +4,9 @@ import AccountDetails from "./components/AccountDetails/AccountDetails";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
 import AuthContext from "../../../../context/auth/authContext";
-import CircularProgress from "@material-ui/core/CircularProgress";
 import AccountProfile from "./components/AccountProfile/AccountProfile";
+//loading
+import CustomCircularProgress from "../../../Loading/CircularProgress";
 
 // Component styles
 const styles = theme => ({
@@ -29,9 +30,7 @@ const Account = () => {
 
     if (loading) {
         return (
-            <Grid container justify={"center"} alignItems={"flex-start"} style={{height: 320}}>
-                <CircularProgress/>
-            </Grid>
+            <CustomCircularProgress height={320} />
         )
     } else {
         const {user = {}} = authContext;

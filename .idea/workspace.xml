@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09050071-f454-4ea5-a7d7-4d9077b8f157" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/MyReservationTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/css/image-gralley.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Loading/CircularProgress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Loading/LinearProgress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Cinema/Cinemas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/Account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/AccountProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/AccountProfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonHome.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +117,9 @@
       <workItem from="1583566716452" duration="3507000" />
       <workItem from="1583570236456" duration="16529000" />
       <workItem from="1583630126531" duration="24576000" />
-      <workItem from="1583673448634" duration="3908000" />
+      <workItem from="1583673448634" duration="4114000" />
+      <workItem from="1583719592558" duration="8760000" />
+      <workItem from="1583751893369" duration="12292000" />
     </task>
     <servers />
   </component>
