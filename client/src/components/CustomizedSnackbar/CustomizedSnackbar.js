@@ -21,7 +21,8 @@ const CustomizedSnackbar = props => {
                 horizontal
             }}
             open={isOpen}
-            onClose={handleClose}>
+            onClose={handleClose}
+            style={{marginTop: 50}}>
             <SnackbarContentWrapper
                 style={{color: '#fff'}}
                 variant={variant}

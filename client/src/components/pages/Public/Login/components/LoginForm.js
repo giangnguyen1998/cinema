@@ -53,21 +53,16 @@ const LoginForm = (props) => {
     }, [error, isAuth, props.history]);
 
     //handle event
+    const showErrors = (e, error) => setMessage({...message, [e.target.name]: error});
+
     const onEmailChange = (e) => {
-        const rMail = regexEmail;
         setUser({...user, [e.target.name]: e.target.value});
         if (e.target.name === 'email'
             && e.target.value.length > 0
-            && rMail.exec(e.target.value) === null) {
-            setMessage({
-                ...message,
-                email: 'Please enter a valid email. VD : ngoctrinh89@gmail.com'
-            });
+            && regexEmail.exec(e.target.value) === null) {
+            showErrors(e, 'Please enter a valid email. VD : ngoctrinh89@gmail.com');
         } else {
-            setMessage({
-                ...message,
-                email: ''
-            });
+            showErrors(e, '');
         }
     };
 
@@ -76,25 +71,15 @@ const LoginForm = (props) => {
         if (e.target.name === 'password'
             && e.target.value.length > 0
             && e.target.value.length < 6) {
-            setMessage({
-                ...message,
-                password: 'Password must be greater than 6 characters and less than 16 characters.'
-            });
+            showErrors(e, 'Password must be greater than 6 characters and less than 16 characters.');
         } else {
-            setMessage({
-                ...message,
-                password: ''
-            });
+            showErrors(e, '');
         }
     };
 
-    const handleClickShowPassword = () => {
-        setUser({...user, showPassword: !showPassword});
-    };
+    const handleClickShowPassword = () => setUser({...user, showPassword: !showPassword});
 
-    const handleMouseDownPassword = event => {
-        event.preventDefault();
-    };
+    const handleMouseDownPassword = event => event.preventDefault();
 
     const onSubmit = (e) => {
         e.preventDefault();

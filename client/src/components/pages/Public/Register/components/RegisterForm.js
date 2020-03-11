@@ -54,56 +54,38 @@ const RegisterForm = (props) => {
     }, [error, isAuth, props.history]);
 
     //handle event
+    const showErrors = (e, error) => setMessage({...message, [e.target.name]: error});
+
     const onChange = (e) => {
         setUser({...user, [e.target.name]: e.target.value});
         if (e.target.name === 'name'
             && e.target.value.length > 0
             && (e.target.value.length < 10 || e.target.value.length > 40)) {
-            setMessage({
-                ...message,
-                name: 'Full Name must be greater than 10 characters and less than 40 characters.'
-            });
+            showErrors(e, 'Full Name must be greater than 10 characters and less than 40 characters.');
         } else {
-            setMessage({
-                ...message,
-                name: ''
-            });
+            showErrors(e, '');
         }
     };
 
     const onEmailChange = (e) => {
-        const rMail = regexEmail;
         setUser({...user, [e.target.name]: e.target.value});
         if (e.target.name === 'email'
             && e.target.value.length > 0
-            && rMail.exec(e.target.value) === null) {
-            setMessage({
-                ...message,
-                email: 'Please enter a valid email. VD : ngoctrinh89@gmail.com'
-            });
+            && regexEmail.exec(e.target.value) === null) {
+            showErrors(e, 'Please enter a valid email. VD : ngoctrinh89@gmail.com');
         } else {
-            setMessage({
-                ...message,
-                email: ''
-            });
+            showErrors(e, '');
         }
     };
 
     const onPhoneChange = (e) => {
-        const isPhone = regexPhone;
         setUser({...user, [e.target.name]: e.target.value});
         if (e.target.name === 'phone'
             && e.target.value.length > 0
-            && isPhone.exec(e.target.value) === null) {
-            setMessage({
-                ...message,
-                phone: 'Phone must have 10 characters. VD : 0941942295'
-            });
+            && regexPhone.exec(e.target.value) === null) {
+            showErrors(e, 'Phone must have 10 characters. VD : 0941942295');
         } else {
-            setMessage({
-                ...message,
-                phone: ''
-            });
+            showErrors(e, '');
         }
     };
 
@@ -112,37 +94,22 @@ const RegisterForm = (props) => {
         if (e.target.name === 'password'
             && e.target.value.length > 0
             && e.target.value.length < 6) {
-            setMessage({
-                ...message,
-                password: 'Password must be greater than 6 characters and less than 16 characters.'
-            });
+            showErrors(e, 'Password must be greater than 6 characters and less than 16 characters.');
         } else {
-            setMessage({
-                ...message,
-                password: ''
-            });
+            showErrors(e, '');
         }
     };
 
     const onConfirmChange = (e) => {
         setUser({...user, [e.target.name]: e.target.value});
-        setMessage({
-            ...message,
-            confirmPassword: ''
-        });
+        showErrors(e, '');
     };
 
-    const handleClickShowPassword = () => {
-        setUser({...user, showPassword: !showPassword});
-    };
+    const handleClickShowPassword = () => setUser({...user, showPassword: !showPassword});
 
-    const handleMouseDownPassword = event => {
-        event.preventDefault();
-    };
+    const handleMouseDownPassword = event => event.preventDefault();
 
-    const onChangeCheckBox = (e) => {
-        setUser({...user, isChecked: !isChecked});
-    };
+    const onChangeCheckBox = (e) => setUser({...user, isChecked: !isChecked});
 
     const onSubmit = (e) => {
         e.preventDefault();
