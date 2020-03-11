@@ -28,7 +28,7 @@ router.post("/", [
 ], async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(400).json({errors: errors.array()});
+        return res.status(400).json({msg: errors.array()});
     }
 
     const {name, email, password, role, phone} = req.body;
@@ -37,7 +37,7 @@ router.post("/", [
         let user = await UserModel.findOne({email});
 
         if (user) {
-            return res.status(400).json({msg: 'User already exists'});
+            return res.status(400).json({msg: 'Account already exists'});
         }
 
         user = new UserModel({
@@ -92,7 +92,7 @@ router.put("/:id", [
 ], async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(400).json({errors: errors.array()});
+        return res.status(400).json({msg: errors.array()});
     }
 
     const {name, password, phone} = req.body;

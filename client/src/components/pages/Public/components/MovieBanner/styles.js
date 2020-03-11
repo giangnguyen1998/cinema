@@ -23,6 +23,7 @@ export default theme => ({
         height: '100%',
         right: 0,
         backgroundSize: 'cover',
+        backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
         width: '100%'
     },

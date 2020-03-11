@@ -1,6 +1,7 @@
 import React, {useReducer} from "react";
 import AlertContext from "./alertContext";
 import alertReducer from "./alertReducer";
+import {v4 as uuidV4} from "uuid";
 import {
     REMOVE_ALERT,
     SET_ALERT,
@@ -8,6 +9,7 @@ import {
 
 const init = (initialState) => {
     return {
+        alerts: [],
         open: false
     }
 };
@@ -21,10 +23,21 @@ const AlertState = (props) => {
     const [state, dispatch] = useReducer(alertReducer, initialState, init);
 
     //Set alert
-    const setAlert = (msg, type) => {
+    const setAlert = (error, type) => {
+        let results = [];
+        if (error instanceof Array) {
+            error.forEach(item => {
+                const id = uuidV4();
+                const msg = item.msg;
+                results.push({msg, type, id});
+            });
+        } else {
+            const id = uuidV4();
+            results.push({msg: error, type, id});
+        }
         dispatch({
             type: SET_ALERT,
-            payload: {msg, type}
+            payload: results
         });
     };
     //Remove Alert

@@ -27,12 +27,18 @@ router.get("/", auth, async (req, res) => {
 //@desc     Auth user & get token
 //@access   Public
 router.post("/", [
-    check("email", "Please include a valid email").isEmail(),
-    check("password", "Password is required").exists()
+    check("email", "Please include a valid email.").isEmail(),
+    check("password", "Please enter password 6 characters with min, 16 characters with max.")
+        .not()
+        .isEmpty()
+        .isLength({
+            min: 6,
+            max: 16
+        })
 ], async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(400).json({errors: errors.array()});
+        return res.status(400).json({msg: errors.array()});
     }
 
     const {email, password} = req.body;
@@ -41,13 +47,13 @@ router.post("/", [
         let user = await UserModel.findOne({email});
 
         if (!user) {
-            return res.status(400).json({msg: "Invalid Credentials"});
+            return res.status(400).json({msg: "Email does not exist."});
         }
 
         const isMatch = await bcrypt.compare(password, user.password);
 
         if (!isMatch) {
-            return res.status(400).json({msg: "Invalid Credentials"});
+            return res.status(400).json({msg: "Password was not correctly."});
         }
 
         const payload = {

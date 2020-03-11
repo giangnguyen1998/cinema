@@ -2,20 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09050071-f454-4ea5-a7d7-4d9077b8f157" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/css/image-gralley.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Loading/CircularProgress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Loading/LinearProgress.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Cinema/Cinemas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Alert/Alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/CustomizedSnackbar/CustomizedSnackbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/SnackbarContentWrapper/SnackbarContentWrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/CinemaBanner/CinemaBanner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/CinemaCard/CinemaCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/CinemaCard/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/Account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/AccountProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/AccountProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Loading/LinearProgress.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Loading/LinearProgress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/Alerts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Cinema/Cinemas.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Cinema/CinemasPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/LoginForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Register/components/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Register/components/RegisterForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Register/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Register/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/alert/alertReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/alert/alertReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/movie/MovieState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/movie/MovieState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/movie/movieReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/movie/movieReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ultils/setBackgroundAlert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ultils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ultils/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/movies.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/movies.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/users.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.route.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +136,10 @@
       <workItem from="1583630126531" duration="24576000" />
       <workItem from="1583673448634" duration="4114000" />
       <workItem from="1583719592558" duration="8760000" />
-      <workItem from="1583751893369" duration="12292000" />
+      <workItem from="1583751893369" duration="12531000" />
+      <workItem from="1583802869622" duration="12226000" />
+      <workItem from="1583844689911" duration="15485000" />
+      <workItem from="1583888191032" duration="23429000" />
     </task>
     <servers />
   </component>
@@ -131,18 +151,18 @@
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="323" y="91" key="#Usage_Scope/0.0.1462.864@0.0.1462.864" timestamp="1582992954284" />
-    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583634667017">
+    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583857927358">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1536.824@0.40.1536.824" timestamp="1583634667017" />
+    <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1536.824@0.40.1536.824" timestamp="1583857927358" />
     <state x="461" y="212" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1583028004256">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="461" y="212" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1462.864@0.0.1462.864" timestamp="1583028004256" />
-    <state x="499" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583412724867">
+    <state x="499" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583857996887">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="499" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1536.824@0.40.1536.824" timestamp="1583412724867" />
+    <state x="499" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1536.824@0.40.1536.824" timestamp="1583857996887" />
     <state x="406" y="225" key="EditFileWatcherDialog" timestamp="1583331741807">
       <screen x="0" y="40" width="1536" height="824" />
     </state>

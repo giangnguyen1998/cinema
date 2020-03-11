@@ -8,13 +8,13 @@ import {
     SET_LOADING,
     GET_MOVIE,
     CLEAR_MOVIES,
-    CLEAR_MOVIE
+    CLEAR_MOVIE, CLEAR_ERRORS
 } from "../Types";
 
 const init = (initialState) => {
     return {
         loading: false,
-        movies: []
+        movies: [],
     };
 };
 
@@ -78,7 +78,13 @@ const MovieState = (props) => {
     const clearMovie = () => {
         dispatch({
             type: CLEAR_MOVIE
-        })
+        });
+    };
+    //clear errors
+    const clearErrors = () => {
+        dispatch({
+            type: CLEAR_ERRORS
+        });
     };
 
     return (
@@ -91,7 +97,8 @@ const MovieState = (props) => {
                 getMovies,
                 getMovieById,
                 clearMovies,
-                clearMovie
+                clearMovie,
+                clearErrors
             }}>
             {props.children}
         </MovieContext.Provider>

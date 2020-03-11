@@ -4,7 +4,8 @@ import {
     GET_MOVIE,
     CLEAR_MOVIE,
     CLEAR_MOVIES,
-    SET_LOADING
+    SET_LOADING,
+    CLEAR_ERRORS
 } from "../Types";
 
 export default (state, action) => {
@@ -41,6 +42,11 @@ export default (state, action) => {
             return {
                 ...state,
                 movie: null
+            };
+        case CLEAR_ERRORS:
+            return {
+                ...state,
+                error: null
             };
         default:
             return state;

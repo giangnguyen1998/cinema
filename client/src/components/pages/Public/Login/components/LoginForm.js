@@ -1,53 +1,110 @@
 import React, {useState, useContext, useEffect} from "react";
 import useStyles from "./styles";
+//import from material ui
 import Typography from "@material-ui/core/Typography";
 import {Link as RouterLink} from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
-import AlertContext from "../../../../../context/alert/alertContext";
-import AuthContext from "../../../../../context/auth/authContext";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import Visibility from '@material-ui/icons/Visibility';
+import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import InputAdornment from "@material-ui/core/InputAdornment";
+import IconButton from "@material-ui/core/IconButton";
+//import context
+import AuthContext from "../../../../../context/auth/authContext";
+import AlertContext from "../../../../../context/alert/alertContext";
+//import regex
+import {
+    regexEmail
+} from "../../../../../ultils/utils";
 
 const LoginForm = (props) => {
+    //define styles
     const classes = useStyles();
-    const alertContext = useContext(AlertContext);
+    //define context
     const authContext = useContext(AuthContext);
+    const alertContext = useContext(AlertContext);
+    //define state
     const [user, setUser] = useState({
         email: "",
-        password: ""
+        password: "",
+        showPassword: false
     });
-
-    const {email, password} = user;
+    const [message, setMessage] = useState({
+        email: '',
+        password: ''
+    });
+    //destructuring
+    const {email, password, showPassword} = user;
+    const {login, error = [], clearErrors, isAuthenticated, loading} = authContext;
     const {setAlert} = alertContext;
-    const {login, error, clearErrors, isAuthenticated, loading} = authContext;
     const isAuth = (isAuthenticated === "true");
-
+    const isValid = (message.email !== '' || message.password !== '');
+    //life cycle
     useEffect(() => {
         if (isAuth) {
             props.history.push("/");
         }
-
-        if (error === 'Invalid Credentials') {
+        if (error !== null) {
             setAlert(error, "error");
             clearErrors();
         }
         //eslint-disable-next-line
     }, [error, isAuth, props.history]);
 
-    const onChange = (e) => setUser({...user, [e.target.name]: e.target.value});
-
-    const onSubmit = (e) => {
-        e.preventDefault();
-        if (email === "" || password === "") {
-            setAlert("Please fill in all fields", "error");
+    //handle event
+    const onEmailChange = (e) => {
+        const rMail = regexEmail;
+        setUser({...user, [e.target.name]: e.target.value});
+        if (e.target.name === 'email'
+            && e.target.value.length > 0
+            && rMail.exec(e.target.value) === null) {
+            setMessage({
+                ...message,
+                email: 'Please enter a valid email. VD : ngoctrinh89@gmail.com'
+            });
         } else {
-            login({
-                email,
-                password
+            setMessage({
+                ...message,
+                email: ''
             });
         }
     };
 
+    const onPasswordChange = (e) => {
+        setUser({...user, [e.target.name]: e.target.value});
+        if (e.target.name === 'password'
+            && e.target.value.length > 0
+            && e.target.value.length < 6) {
+            setMessage({
+                ...message,
+                password: 'Password must be greater than 6 characters and less than 16 characters.'
+            });
+        } else {
+            setMessage({
+                ...message,
+                password: ''
+            });
+        }
+    };
+
+    const handleClickShowPassword = () => {
+        setUser({...user, showPassword: !showPassword});
+    };
+
+    const handleMouseDownPassword = event => {
+        event.preventDefault();
+    };
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        login({
+            email,
+            password
+        });
+    };
+
+    //render
     return (
         <form className={classes.form} onSubmit={onSubmit}>
             <Typography className={classes.title} variant="h2">
@@ -58,10 +115,12 @@ const LoginForm = (props) => {
                     className={classes.textField}
                     label="Email"
                     name="email"
-                    onChange={onChange}
+                    onChange={onEmailChange}
                     type="text"
                     value={email}
                     variant="outlined"
+                    error={message.email !== ''}
+                    helperText={message.email}
                     required
                     rowsMax={1}
                 />
@@ -69,14 +128,30 @@ const LoginForm = (props) => {
                     className={classes.textField}
                     label="Password"
                     name="password"
-                    onChange={onChange}
-                    type="password"
+                    onChange={onPasswordChange}
+                    type={showPassword ? 'text' : 'password'}
                     value={password}
                     variant="outlined"
+                    error={message.password !== ''}
+                    helperText={message.password}
                     required
                     rowsMax={1}
                     inputProps={{
-                        maxLength: 16,
+                        maxLength: 16
+                    }}
+                    InputProps={{
+                        endAdornment: (
+                            <InputAdornment position="end">
+                                <IconButton
+                                    aria-label="toggle password visibility"
+                                    onClick={handleClickShowPassword}
+                                    onMouseDown={handleMouseDownPassword}
+                                    edge="end"
+                                >
+                                    {showPassword ? <Visibility/> : <VisibilityOff/>}
+                                </IconButton>
+                            </InputAdornment>
+                        )
                     }}
                 />
             </div>
@@ -87,11 +162,11 @@ const LoginForm = (props) => {
                     color="primary"
                     type="submit"
                     size="large"
-                    disabled={loading}
+                    disabled={loading || isValid}
                     variant="contained">
                     Login now
                 </Button>
-                {loading && <CircularProgress size={24} className={classes.buttonProgress} />}
+                {loading && <CircularProgress size={24} className={classes.buttonProgress}/>}
             </div>
             <Typography className={classes.register} variant="body1">
                 Don't have an account?

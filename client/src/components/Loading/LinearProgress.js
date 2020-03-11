@@ -39,6 +39,7 @@ const CustomLinearProgress = ({loading}) => {
         return () => {
             clearInterval(timer);
         };
+        //eslint-disable-next-line
     }, [loading]);
 
     const clearShow = () => {

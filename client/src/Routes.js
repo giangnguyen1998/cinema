@@ -15,7 +15,7 @@ const MoviePage = lazy(() => import(`./components/pages/Public/Movie/MoviePage`)
 const NotFound = lazy(() => import(`./components/pages/Public/NotFound/NotFound`));
 const MovieCategoryPage = lazy(() => import(`./components/pages/Public/MovieCategoryPage/MovieCategoryPage`));
 const Dashboard = lazy(() => import(`./components/pages/Public/Dashboard/Dashboard`));
-const Cinema = lazy(() => import(`./components/pages/Public/Cinema/Cinemas`));
+const CinemaPage = lazy(() => import(`./components/pages/Public/Cinema/CinemasPage`));
 
 const Routes = () => {
     return (
@@ -61,9 +61,8 @@ const Routes = () => {
                     <WithLayoutRoute
                         exact
                         path="/cinemas"
-                        layoutProps={{withFooter: false}}
                         layout={PublicLayout}
-                        component={Cinema}
+                        component={CinemaPage}
                     />
 
                     <PrivateWithLayoutRoute

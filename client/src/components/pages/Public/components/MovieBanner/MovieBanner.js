@@ -16,6 +16,7 @@ import StarBorderIcon from '@material-ui/icons/StarBorder';
 import styles from './styles';
 import "../../../../../assets/scss/model-video.css";
 import ModalVideo from 'react-modal-video';
+import PropsType from "prop-types";
 
 const useStyles = makeStyles(styles);
 
@@ -81,7 +82,7 @@ const MovieBanner = (props) => {
                         {textTruncate(movie.description, 450)}
                     </Typography>
                     <Typography className={classes.director} variant="h4" color="inherit">
-                        By: {movie.director}
+                        By : {movie.director}
                     </Typography>
                     <Typography
                         className={classes.duration}
@@ -134,6 +135,11 @@ const MovieBanner = (props) => {
             </div>
         </div>
     );
+};
+
+MovieBanner.propsType = {
+    movie: PropsType.object.isRequired,
+    fullDescription: PropsType.bool.isRequired
 };
 
 export default MovieBanner;

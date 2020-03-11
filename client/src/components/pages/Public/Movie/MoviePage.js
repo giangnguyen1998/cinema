@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect} from 'react';
 import MovieBanner from '../components/MovieBanner/MovieBanner';
 import CustomLinearProgress from "../../../Loading/LinearProgress";
 import PropsTypes from "prop-types";

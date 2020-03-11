@@ -67,7 +67,6 @@ const useStyles = makeStyles(theme => ({
     form: {
         paddingLeft: '100px',
         paddingRight: '100px',
-        paddingBottom: '125px',
         flexBasis: '700px',
         [theme.breakpoints.down('sm')]: {
             paddingLeft: theme.spacing(2),
@@ -75,8 +74,7 @@ const useStyles = makeStyles(theme => ({
         }
     },
     title: {
-        color: theme.palette.common.contrastText,
-        marginTop: theme.spacing(3)
+        color: theme.palette.common.contrastText
     },
     subtitle: {
         color: theme.palette.text.secondary,
