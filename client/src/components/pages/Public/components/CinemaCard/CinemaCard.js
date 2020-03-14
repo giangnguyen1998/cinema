@@ -1,14 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Typography } from '@material-ui/core';
+import {Typography, withStyles} from '@material-ui/core';
 import CustomPager from "../../../../Paper/Paper";
-import { EventSeat } from '@material-ui/icons';
+import {EventSeat} from '@material-ui/icons';
 //import styles
-import useStyles from "./styles";
+import styles from "./styles";
 
 const CinemaCard = (props) => {
-    const classes = useStyles(props);
-    const { className, cinema } = props;
+    const {className, cinema, classes} = props;
     const cinemaImage =
         cinema && cinema.image
             ? cinema.image
@@ -23,7 +22,7 @@ const CinemaCard = (props) => {
                         {parseFloat(cinema.star)} / 5
                     </Typography>
                 </div>
-                <img alt="cinema" className={classes.image} src={cinemaImage} />
+                <img alt="cinema" className={classes.image} src={cinemaImage}/>
             </div>
             <div className={classes.details}>
                 <Typography className={classes.name} variant="h4">
@@ -37,7 +36,7 @@ const CinemaCard = (props) => {
                 </Typography>
             </div>
             <div className={classes.stats}>
-                <EventSeat className={classes.eventIcon} />
+                <EventSeat className={classes.eventIcon}/>
                 <Typography className={classes.eventText} variant="body2">
                     {cinema.seatsAvailable} seats Available
                 </Typography>
@@ -46,4 +45,4 @@ const CinemaCard = (props) => {
     );
 };
 
-export default CinemaCard;
+export default withStyles(styles)(CinemaCard);

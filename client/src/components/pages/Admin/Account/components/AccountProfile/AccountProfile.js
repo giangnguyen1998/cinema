@@ -2,16 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import moment from 'moment';
-import {Avatar, Typography} from '@material-ui/core';
+import {Avatar, Typography, withStyles} from '@material-ui/core';
 import Portlet from "../../../../../Portlet/Portlet";
 import PortletContent from "../../../../../PortletContent/PortletContent";
-
 // Component styles
-import useStyles from "./styles";
+import styles from "./styles";
 
 const AccountProfile = (props) => {
-    const classes = useStyles();
-    const {user, className} = props;
+    const {user, className, classes} = props;
     const rootClassName = classNames(classes.root, className);
 
     return (
@@ -42,4 +40,4 @@ AccountProfile.propTypes = {
     user: PropTypes.object.isRequired
 };
 
-export default AccountProfile;
+export default withStyles(styles)(AccountProfile);

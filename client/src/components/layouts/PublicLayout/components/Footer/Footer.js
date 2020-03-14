@@ -1,13 +1,11 @@
 import React, {Fragment} from 'react';
-import {Divider, Typography, Link} from '@material-ui/core';
+import {Divider, Typography, Link, withStyles} from '@material-ui/core';
 import "../../../../../assets/css/footer.css"
 import Cards from "../../../../../assets/images/cards.png";
 import Grid from "@material-ui/core/Grid";
-import useStyles from "./styles";
+import styles from "./styles";
 
-const Footer = () => {
-    const classes = useStyles();
-
+const Footer = ({classes}) => {
     return (
         <Fragment>
             <Divider/>
@@ -157,4 +155,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default withStyles(styles)(Footer);

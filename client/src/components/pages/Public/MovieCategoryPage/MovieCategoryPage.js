@@ -27,7 +27,6 @@ function MovieCategoryPage(props) {
 
     useEffect(() => {
         getMovies(category);
-
         return () => {
             clearMovies();
         }

@@ -1,19 +1,15 @@
 import React, {Fragment, useEffect, useContext} from 'react';
-import {Box} from '@material-ui/core';
+import {Box, withStyles} from '@material-ui/core';
 import MovieCarousel from '../components/MovieCarousel/MovieCarousel';
 import MovieBanner from '../components/MovieBanner/MovieBanner';
-import useStyles from './styles';
+import styles from './styles';
 import SkeletonHome from "../skeletons/SkeletonHome";
 
-import AuthContext from "../../../../context/auth/authContext";
 import MovieContext from "../../../../context/movie/movieContext";
 
-const HomePage = () => {
-    const classes = useStyles();
-    const authContext = useContext(AuthContext);
+const HomePage = ({classes}) => {
     const movieContext = useContext(MovieContext);
     //eslint-disable-next-line
-    const {isAuthenticated, loadUser} = authContext;
     const {
         getMovies,
         clearMovies,
@@ -22,12 +18,7 @@ const HomePage = () => {
     } = movieContext;
 
     useEffect(() => {
-        if (isAuthenticated === "true") {
-            loadUser();
-        }
-
         getMovies("");
-
         return () => {
             clearMovies();
         }
@@ -70,4 +61,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default withStyles(styles)(HomePage);

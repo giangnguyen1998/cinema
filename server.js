@@ -6,6 +6,7 @@ import cors from "cors";
 import UsersRoute from "./routes/users.route";
 import MoviesRoute from "./routes/movies.route";
 import AuthRoute from "./routes/auth.route";
+import CinemaRoute from "./routes/cinemas.route";
 //init express
 const app = express();
 // parse application/x-www-form-urlencoded
@@ -25,6 +26,7 @@ app.get("/", (req, res) => {
 app.use("/api/users", UsersRoute);
 app.use("/api/auth", AuthRoute);
 app.use("/api/movies", MoviesRoute);
+app.use("/api/cinemas", CinemaRoute);
 
 const PORT = 5000;
 

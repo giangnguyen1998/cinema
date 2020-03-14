@@ -1,14 +1,13 @@
 import React, {Fragment, useState, useEffect, useContext} from 'react';
 import {Link as RouterLink} from 'react-router-dom';
 import classnames from 'classnames';
-import {Typography, List, ListItem} from '@material-ui/core';
+import {Typography, List, ListItem, withStyles} from '@material-ui/core';
 import AuthContext from "../../../../../context/auth/authContext"
 // Component styles
-import useStyles from './styles';
+import styles from './styles';
 import UserPopover from './components/UserPopover/UserPopover';
 
-const Navbar = () => {
-    const classes = useStyles();
+const Navbar = ({classes}) => {
     const authContext = useContext(AuthContext);
     const [showMenu, setShowMenu] = useState(false);
     const [scrollPos, setScrollPos] = useState(window.pageYOffset);
@@ -69,7 +68,7 @@ const Navbar = () => {
                                         className={classes.navLink}
                                         to={
                                             user.role !== 'guest'
-                                                ? '/'
+                                                ? '/admin/dashboard'
                                                 : '/myDashboard'
                                         }>
                                         Dashboard
@@ -155,4 +154,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default withStyles(styles)(Navbar);

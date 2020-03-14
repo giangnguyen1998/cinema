@@ -1,6 +1,4 @@
-import makeStyles from "@material-ui/core/styles/makeStyles";
-
-export default makeStyles(theme => ({
+export default theme => ({
     card: {
         display: 'flex',
         flex: ' 0 0 auto',
@@ -27,4 +25,4 @@ export default makeStyles(theme => ({
         padding: '15px',
         whiteSpace: 'normal'
     }
-}));
+});

@@ -1,12 +1,10 @@
-// @ts-nocheck
 import React from 'react';
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 
-const useStyles = makeStyles(theme => ({
-    root: { background: theme.palette.common.black, height: '100vh' }
-}));
+const styles = theme => ({
+    root: {background: theme.palette.common.black, height: '100vh'}
+});
 
-export default () => {
-    const classes = useStyles();
-    return <div className={classes.root} />;
-};
+export default withStyles(styles)(({classes}) => {
+    return <div className={classes.root}/>;
+});

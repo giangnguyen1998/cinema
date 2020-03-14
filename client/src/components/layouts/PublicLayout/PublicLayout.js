@@ -1,26 +1,37 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core';
+import React, {useEffect, useContext} from 'react';
+import {withStyles} from '@material-ui/core';
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import AuthContext from "../../../context/auth/authContext";
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     root: {
         backgroundColor: theme.palette.background.dark,
         color: theme.palette.common.white,
-        height: '100%'
+        height: '100%',
     }
-}));
+});
 
 const PublicLayout = (props) => {
-    const classes = useStyles(props);
-    const { children, withFooter = true, withNavbar = true } = props;
+    const {children, withFooter = true, withNavbar = true, classes} = props;
+    //define context
+    const authContext = useContext(AuthContext);
+    const {isAuthenticated, loadUser} = authContext;
+
+    useEffect(() => {
+        if (isAuthenticated === "true") {
+            loadUser();
+        }
+        //eslint-disable-next-line
+    }, []);
+
     return (
         <div className={classes.root}>
-            {withNavbar && <Navbar />}
+            {withNavbar && <Navbar/>}
             {children}
-            {withFooter && <Footer />}
+            {withFooter && <Footer/>}
         </div>
     );
 };
 
-export default PublicLayout;
+export default withStyles(styles)(PublicLayout);

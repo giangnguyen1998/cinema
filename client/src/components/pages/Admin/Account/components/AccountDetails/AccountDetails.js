@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import classNames from 'classnames';
-import {Button, TextField} from '@material-ui/core';
+import {Button, TextField, withStyles} from '@material-ui/core';
 import Portlet from "../../../../../Portlet/Portlet";
 import PortletContent from "../../../../../PortletContent/PortletContent";
 import PortletFooter from "../../../../../PortletFooter/PortletFooter";
@@ -12,11 +12,9 @@ import AuthContext from "../../../../../../context/auth/authContext";
 //import validate
 import {regexPhone} from "../../../../../../ultils/utils";
 // Component styles
-import useStyles from "./styles";
+import styles from "./styles";
 
-const AccountDetails = ({user, className}) => {
-    //define style
-    const classes = useStyles();
+const AccountDetails = ({user, className, classes}) => {
     //define context
     const alertContext = useContext(AlertContext);
     const authContext = useContext(AuthContext);
@@ -183,4 +181,4 @@ const AccountDetails = ({user, className}) => {
     )
 };
 
-export default AccountDetails;
+export default withStyles(styles)(AccountDetails);

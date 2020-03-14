@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Paper, Typography} from '@material-ui/core';
-import useStyles from "./styles";
+import {Paper, Typography, withStyles} from '@material-ui/core';
+import styles from "./styles";
 import {textTruncate} from '../../../../../ultils/utils';
 import {Link} from 'react-router-dom';
 
-const MovieCard = ({movie}) => {
-    const classes = useStyles();
-
+const MovieCard = ({movie, classes}) => {
     return (
         <Link to={`/movie/${movie._id}`} style={{textDecoration: 'none'}}>
             <Paper className={classes.movieCard} elevation={20}>
@@ -63,4 +61,4 @@ MovieCard.propTypes = {
     movie: PropTypes.object.isRequired
 };
 
-export default MovieCard;
+export default withStyles(styles)(MovieCard);

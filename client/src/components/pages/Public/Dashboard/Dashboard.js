@@ -1,10 +1,10 @@
 import React from 'react';
-import {makeStyles, Grid, Typography, Container} from '@material-ui/core';
+import {withStyles, Grid, Typography, Container} from '@material-ui/core';
 import Account from "../../Admin/Account/Account";
 import MyReservationTable from "./components/MyReservationTable/MyReservationTable";
 import {cinemas, movies, myReservations} from "../../../data/MovieDataService";
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     title: {
         fontSize: '3rem',
         lineHeight: '3rem',
@@ -16,12 +16,9 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('sm')]: {
         fullWidth: {width: '100%'}
     }
-}));
+});
 
-const Dashboard = () => {
-
-    const classes = useStyles();
-
+const Dashboard = ({classes}) => {
     return (
         <Container>
             <Grid container spacing={2}>
@@ -31,7 +28,7 @@ const Dashboard = () => {
                     </Typography>
                 </Grid>
                 <Grid item xs={12}>
-                    <Account />
+                    <Account/>
                 </Grid>
                 {!!myReservations.length && (
                     <>
@@ -57,4 +54,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default withStyles(styles)(Dashboard);

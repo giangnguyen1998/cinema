@@ -1,10 +1,12 @@
-import React from 'react';
-import {makeStyles, Grid, Typography, Container} from '@material-ui/core';
+import React, {useContext, useEffect} from 'react';
+import {withStyles, Grid, Typography, Container} from '@material-ui/core';
 import CinemaCard from '../components/CinemaCard/CinemaCard';
+//import context
+import CinemaContext from "../../../../context/cinema/cinemaContext";
 //import static data
-import {cinemas} from "../../../data/MovieDataService";
+import SkeletonCinema from "../skeletons/SkeletonCinema";
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     title: {
         fontSize: '3rem',
         lineHeight: '3rem',
@@ -12,11 +14,29 @@ const useStyles = makeStyles(theme => ({
         marginTop: theme.spacing(15),
         marginBottom: theme.spacing(3)
     }
-}));
+});
 
-const CinemasPage = (props) => {
-    const classes = useStyles(props);
+const CinemasPage = ({classes}) => {
+    const cinemaContext = useContext(CinemaContext);
 
+    const {getCinemas, loading, clearCinemas, error, cinemas} = cinemaContext;
+
+    useEffect(() => {
+        getCinemas();
+        if (error != null) {
+
+        }
+        return () => {
+            clearCinemas();
+        }
+        //eslint-disable-next-line
+    }, []);
+
+    if (loading) {
+        return (
+            <SkeletonCinema/>
+        )
+    }
     return (
         <Container maxWidth="xl">
             <Grid container spacing={2} style={{marginBottom: 50}}>
@@ -43,4 +63,4 @@ const CinemasPage = (props) => {
     );
 };
 
-export default CinemasPage;
+export default withStyles(styles)(CinemasPage);

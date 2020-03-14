@@ -1,15 +1,13 @@
 import React from 'react';
-import useStyles from "./styles";
-import {Grid} from '@material-ui/core';
-import {IconButton} from '@material-ui/core';
+import styles from "./styles";
+import {Grid, IconButton, withStyles} from '@material-ui/core';
 import {ArrowBack as ArrowBackIcon} from '@material-ui/icons';
 import LoginForm from './components/LoginForm';
 
 const LoginPage = (props) => {
-    const classes = useStyles();
+    const {classes, history} = props;
 
     const handleBack = () => {
-        const {history} = props;
         history.goBack();
     };
 
@@ -36,4 +34,4 @@ const LoginPage = (props) => {
     );
 };
 
-export default LoginPage;
+export default withStyles(styles)(LoginPage);

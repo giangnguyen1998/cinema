@@ -1,6 +1,4 @@
-import makeStyles from "@material-ui/core/styles/makeStyles";
-
-const useStyles = makeStyles(theme => ({
+export default theme => ({
     root: {},
     details: {
         display: 'flex'
@@ -26,6 +24,4 @@ const useStyles = makeStyles(theme => ({
     uploadButton: {
         marginRight: theme.spacing(2)
     }
-}));
-
-export default useStyles;
+});

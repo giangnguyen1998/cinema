@@ -2,13 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09050071-f454-4ea5-a7d7-4d9077b8f157" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/AdminLayout/AdminLayout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/AdminLayout/components/Footer/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/AdminLayout/components/Footer/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/AdminLayout/components/Sidebar/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/AdminLayout/components/Sidebar/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/AdminLayout/components/Topbar/Topbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/AdminLayout/components/Topbar/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/layouts/AdminLayout/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Dashboard/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/Public/skeletons/SkeletonCinema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/cinema/CinemaState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/cinema/cinemaContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/cinema/cinemaReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/cinema.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/cinemas.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/giang.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CustomizedSnackbar/CustomizedSnackbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CustomizedSnackbar/CustomizedSnackbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Alert/Alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Alert/Alert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Loading/LinearProgress.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Loading/LinearProgress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Loading/Loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/data/MovieDataService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/PublicLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/PublicLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Footer/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layouts/PublicLayout/components/Navbar/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/Account.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/AccountDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/AccountDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/components/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Register/components/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Register/components/RegisterForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountDetails/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/AccountProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/AccountProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Admin/Account/components/AccountProfile/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Cinema/CinemasPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Cinema/CinemasPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/MyReservationTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/MyReservationTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Dashboard/components/MyReservationTable/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Home/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Home/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Home/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Home/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Login/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Login/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Login/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/Movie/MoviePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/MovieCategoryPage/MovieCategoryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/MovieCategoryPage/MovieCategoryPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/CinemaBanner/CinemaBanner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/CinemaCard/CinemaCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/CinemaCard/CinemaCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/CinemaCard/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/CinemaCard/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieBanner/MovieBanner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCard/MovieCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCard/MovieCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCardSimple/MovieCardSimple.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCardSimple/MovieCardSimple.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCardSimple/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/MovieCardSimple/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/ResponsiveMovieCard/ResponsiveMovieCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/ResponsiveMovieCard/ResponsiveMovieCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/Public/components/ResponsiveMovieCard/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/Public/components/ResponsiveMovieCard/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/Types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/Types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,16 +114,16 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\react\cinema\client\src\components\pages\Public\Dashboard\components\MyReservationTable" />
-      <recent name="E:\react\cinema\client\src\components\pages\Public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\react\cinema\client\src\assets\images" />
       <recent name="E:\react\cinema\client\public" />
       <recent name="C:\Users\Nguye\WebstormProjects\cinema\client\src\components\pages\HomePage\Components" />
       <recent name="C:\Users\Nguye\WebstormProjects\cinema\client\src" />
       <recent name="C:\Users\Nguye\WebstormProjects\cinema\client\src\components\layouts\MainLayout\components\Navbar" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\react\cinema\client\src\components\pages\Public\Dashboard\components\MyReservationTable" />
+      <recent name="E:\react\cinema\client\src\components\pages\Public" />
     </key>
   </component>
   <component name="RunManager">
@@ -132,7 +179,13 @@
       <workItem from="1583939743083" duration="262000" />
       <workItem from="1583940017694" duration="138000" />
       <workItem from="1583940207267" duration="195000" />
-      <workItem from="1583940414365" duration="3829000" />
+      <workItem from="1583940414365" duration="3951000" />
+      <workItem from="1583982461757" duration="1791000" />
+      <workItem from="1584010704897" duration="4293000" />
+      <workItem from="1584072721560" duration="499000" />
+      <workItem from="1584083222586" duration="748000" />
+      <workItem from="1584099752568" duration="6933000" />
+      <workItem from="1584190687149" duration="12352000" />
     </task>
     <servers />
   </component>
@@ -157,14 +210,14 @@
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="323" y="91" key="#Usage_Scope/0.0.1462.864@0.0.1462.864" timestamp="1582992954284" />
-    <state x="360" y="110" key="#Web_Browsers" timestamp="1583936348974">
+    <state x="360" y="110" key="#Web_Browsers" timestamp="1583982660511">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="360" y="110" key="#Web_Browsers/0.40.1536.824@0.40.1536.824" timestamp="1583936348974" />
-    <state x="223" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583941112534">
+    <state x="360" y="110" key="#Web_Browsers/0.40.1536.824@0.40.1536.824" timestamp="1583982660511" />
+    <state x="223" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583983021136">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="223" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824@0.40.1536.824" timestamp="1583941112534" />
+    <state x="223" y="107" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824@0.40.1536.824" timestamp="1583983021136" />
     <state x="526" y="242" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583857927358">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
@@ -191,58 +244,58 @@
     <state x="512" y="187" key="FileChooserDialogImpl/0.0.1462.864@0.0.1462.864" timestamp="1582993149821" />
     <state x="538" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1583239155821" />
     <state x="538" y="218" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1583936368070" />
-    <state width="1515" height="251" key="GridCell.Tab.0.bottom" timestamp="1583941858860">
+    <state width="1515" height="202" key="GridCell.Tab.0.bottom" timestamp="1583983025694">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1513" height="203" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1583224738840" />
-    <state width="1515" height="251" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1583941858860" />
-    <state width="1515" height="251" key="GridCell.Tab.0.center" timestamp="1583941858860">
+    <state width="1515" height="202" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1583983025694" />
+    <state width="1515" height="202" key="GridCell.Tab.0.center" timestamp="1583983025694">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1513" height="203" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1583224738839" />
-    <state width="1515" height="251" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1583941858860" />
-    <state width="1515" height="251" key="GridCell.Tab.0.left" timestamp="1583941858860">
+    <state width="1515" height="202" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1583983025694" />
+    <state width="1515" height="202" key="GridCell.Tab.0.left" timestamp="1583983025694">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1513" height="203" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1583224738839" />
-    <state width="1515" height="251" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1583941858860" />
-    <state width="1515" height="251" key="GridCell.Tab.0.right" timestamp="1583941858860">
+    <state width="1515" height="202" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1583983025693" />
+    <state width="1515" height="202" key="GridCell.Tab.0.right" timestamp="1583983025694">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1513" height="203" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1583224738839" />
-    <state width="1515" height="251" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1583941858860" />
-    <state width="1515" height="251" key="GridCell.Tab.1.bottom" timestamp="1583941858860">
+    <state width="1515" height="202" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1583983025694" />
+    <state width="1515" height="251" key="GridCell.Tab.1.bottom" timestamp="1583944370090">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1515" height="251" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1583941858860" />
-    <state width="1515" height="251" key="GridCell.Tab.1.center" timestamp="1583941858860">
+    <state width="1515" height="251" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1583944370090" />
+    <state width="1515" height="251" key="GridCell.Tab.1.center" timestamp="1583944370089">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1515" height="251" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1583941858860" />
-    <state width="1515" height="251" key="GridCell.Tab.1.left" timestamp="1583941858860">
+    <state width="1515" height="251" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1583944370089" />
+    <state width="1515" height="251" key="GridCell.Tab.1.left" timestamp="1583944370089">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1515" height="251" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1583941858860" />
-    <state width="1515" height="251" key="GridCell.Tab.1.right" timestamp="1583941858860">
+    <state width="1515" height="251" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1583944370089" />
+    <state width="1515" height="251" key="GridCell.Tab.1.right" timestamp="1583944370090">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1515" height="251" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1583941858860" />
-    <state width="1515" height="251" key="GridCell.Tab.2.bottom" timestamp="1583941858861">
+    <state width="1515" height="251" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1583944370090" />
+    <state width="1515" height="251" key="GridCell.Tab.2.bottom" timestamp="1583944370090">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1515" height="251" key="GridCell.Tab.2.bottom/0.40.1536.824@0.40.1536.824" timestamp="1583941858861" />
-    <state width="1515" height="251" key="GridCell.Tab.2.center" timestamp="1583941858861">
+    <state width="1515" height="251" key="GridCell.Tab.2.bottom/0.40.1536.824@0.40.1536.824" timestamp="1583944370090" />
+    <state width="1515" height="251" key="GridCell.Tab.2.center" timestamp="1583944370090">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1515" height="251" key="GridCell.Tab.2.center/0.40.1536.824@0.40.1536.824" timestamp="1583941858861" />
-    <state width="1515" height="251" key="GridCell.Tab.2.left" timestamp="1583941858860">
+    <state width="1515" height="251" key="GridCell.Tab.2.center/0.40.1536.824@0.40.1536.824" timestamp="1583944370090" />
+    <state width="1515" height="251" key="GridCell.Tab.2.left" timestamp="1583944370090">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1515" height="251" key="GridCell.Tab.2.left/0.40.1536.824@0.40.1536.824" timestamp="1583941858860" />
-    <state width="1515" height="251" key="GridCell.Tab.2.right" timestamp="1583941858861">
+    <state width="1515" height="251" key="GridCell.Tab.2.left/0.40.1536.824@0.40.1536.824" timestamp="1583944370090" />
+    <state width="1515" height="251" key="GridCell.Tab.2.right" timestamp="1583944370090">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1515" height="251" key="GridCell.Tab.2.right/0.40.1536.824@0.40.1536.824" timestamp="1583941858861" />
+    <state width="1515" height="251" key="GridCell.Tab.2.right/0.40.1536.824@0.40.1536.824" timestamp="1583944370090" />
     <state width="1515" height="251" key="GridCell.Tab.3.bottom" timestamp="1583937225198">
       <screen x="0" y="40" width="1536" height="824" />
     </state>

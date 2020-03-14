@@ -1,6 +1,4 @@
-import {makeStyles} from "@material-ui/core";
-
-const useStyles = makeStyles(theme => ({
+export default theme => ({
     root: {
         maxWidth: '100%',
         paddingBottom: theme.spacing(2),
@@ -76,6 +74,4 @@ const useStyles = makeStyles(theme => ({
         marginLeft: theme.spacing(1),
         color: theme.palette.text.secondary
     }
-}));
-
-export default useStyles;
+});

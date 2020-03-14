@@ -9,7 +9,6 @@ const MoviePage = (props) => {
     const {getMovieById, clearMovie, movie, loading} = movieContext;
     useEffect(() => {
         getMovieById(props.match.params.id);
-
         return () => {
             clearMovie();
         }

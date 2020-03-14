@@ -108,10 +108,6 @@ export const movies = [
     }
 ];
 
-export const getCinemaById = (id) => {
-    return cinemas.find(cinema => cinema._id === id);
-};
-
 export const cinemas = [
     {
         _id: 1,
@@ -161,7 +157,6 @@ export const cinemas = [
     {
         _id: 6,
         name: "Lotte Cinema Keangnam",
-        title: "Rạp chiếu phim ở Hà Nội",
         seatsAvailable: 40,
         address: "Tầng 5-6 Keangnam Hanoi Landmark Tower, Phạm Hùng, Cầu Giấy",
         star: '4.2',

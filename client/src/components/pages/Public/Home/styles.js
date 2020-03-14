@@ -1,6 +1,4 @@
-import makeStyles from "@material-ui/core/styles/makeStyles";
-
-const useStyles = makeStyles(theme => ({
+export default theme => ({
     h2: {
         fontSize: '2rem',
         color: theme.palette.common.white,
@@ -8,6 +6,4 @@ const useStyles = makeStyles(theme => ({
         textTransform: 'capitalize'
     },
     carousel: { marginBottom: theme.spacing(6) }
-}));
-
-export default useStyles;
+});

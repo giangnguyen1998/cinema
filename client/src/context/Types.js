@@ -20,3 +20,6 @@ export const CLEAR_MOVIE = "CLEAR_MOVIE";
 //common
 export const SET_LOADING = "SET_LOADING";
 export const GET_DATA_FAIL = "GET_DATA_FAIL";
+//cinema
+export const GET_CINEMAS = "GET_CINEMAS";
+export const CLEAR_CINEMAS = "CLEAR_CINEMAS";

@@ -1,6 +1,4 @@
-import makeStyles from "@material-ui/core/styles/makeStyles";
-
-const useStyles = makeStyles(theme => ({
+export default theme => ({
     movieCard: {
         position: 'relative',
         height: 350,
@@ -114,6 +112,4 @@ const useStyles = makeStyles(theme => ({
             borderRadius: 10
         }
     }
-}));
-
-export default useStyles;
+});

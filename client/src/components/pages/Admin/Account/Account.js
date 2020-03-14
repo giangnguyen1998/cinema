@@ -1,7 +1,7 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext} from 'react';
 import {Grid} from '@material-ui/core';
 import AccountDetails from "./components/AccountDetails/AccountDetails";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import withStyles from "@material-ui/core/styles/withStyles";
 
 import AuthContext from "../../../../context/auth/authContext";
 import AccountProfile from "./components/AccountProfile/AccountProfile";
@@ -11,29 +11,20 @@ import CustomCircularProgress from "../../../Loading/CircularProgress";
 // Component styles
 const styles = theme => ({
     root: {
-        padding: theme.spacing(4)
+        padding: `${theme.spacing(4)}px ${theme.spacing(4)}px 0`
     }
 });
 
-const Account = () => {
+const Account = ({classes}) => {
     const authContext = useContext(AuthContext);
-    const classes = makeStyles(styles);
 
-    const {loadUser, isAuthenticated, loading} = authContext;
-
-    useEffect(() => {
-        if (isAuthenticated === "true") {
-            loadUser();
-        }
-        //eslint-disable-next-line
-    }, []);
+    const {user = {}, loading} = authContext;
 
     if (loading) {
         return (
-            <CustomCircularProgress height={320} />
+            <CustomCircularProgress height={320}/>
         )
     } else {
-        const {user = {}} = authContext;
         return (
             <div className={classes.root}>
                 <Grid container spacing={4}>
@@ -51,4 +42,4 @@ const Account = () => {
     }
 };
 
-export default Account;
+export default withStyles(styles)(Account);

@@ -1,6 +1,4 @@
-import makeStyles from "@material-ui/core/styles/makeStyles";
-
-const useStyles = makeStyles(theme => ({
+export default theme => ({
     root: {},
     field: {
         margin: `${theme.spacing(3)}px ${theme.spacing(3)}px 0 ${theme.spacing(3)}px`
@@ -19,6 +17,4 @@ const useStyles = makeStyles(theme => ({
         paddingTop: theme.spacing(2),
         paddingBottom: theme.spacing(2)
     }
-}));
-
-export default useStyles;
+});

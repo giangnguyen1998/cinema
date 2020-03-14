@@ -1,6 +1,4 @@
-import makeStyles from "@material-ui/core/styles/makeStyles";
-
-const useStyles =  makeStyles(theme => ({
+export default theme => ({
     copyright: {
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(0.5)
@@ -12,6 +10,4 @@ const useStyles =  makeStyles(theme => ({
         letterSpacing: '1px',
         color: theme.palette.common.white
     }
-}));
-
-export default useStyles;
+});

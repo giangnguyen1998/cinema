@@ -6,7 +6,6 @@ import {
     Box,
     Typography,
     Button,
-    makeStyles,
     withStyles
 } from '@material-ui/core';
 import {textTruncate} from '../../../../../ultils/utils';
@@ -17,8 +16,6 @@ import styles from './styles';
 import "../../../../../assets/scss/model-video.css";
 import ModalVideo from 'react-modal-video';
 import PropsType from "prop-types";
-
-const useStyles = makeStyles(styles);
 
 const StyledRating = withStyles({
     iconFilled: {
@@ -35,8 +32,7 @@ const LinkBehavior = forwardRef(((props, ref) => (
 
 const MovieBanner = (props) => {
     const [open, setOpen] = useState(false);
-    const {movie, fullDescription} = props;
-    const classes = useStyles(props);
+    const {movie, fullDescription, classes} = props;
     if (!movie) return null;
 
     const date = new Date(movie.started.toString());
@@ -142,4 +138,4 @@ MovieBanner.propsType = {
     fullDescription: PropsType.bool.isRequired
 };
 
-export default MovieBanner;
+export default withStyles(styles)(MovieBanner);

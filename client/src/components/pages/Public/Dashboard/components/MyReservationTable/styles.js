@@ -1,6 +1,4 @@
-import makeStyles from "@material-ui/core/styles/makeStyles";
-
-const useStyle = makeStyles(theme => ({
+export default theme => ({
     root: {
         marginBottom: theme.spacing(8)
     },
@@ -28,6 +26,4 @@ const useStyle = makeStyles(theme => ({
         fontWeight: 500,
         cursor: 'pointer'
     }
-}));
-
-export default useStyle;
+});

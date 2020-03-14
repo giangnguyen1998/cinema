@@ -1,6 +1,4 @@
-import makeStyles from "@material-ui/core/styles/makeStyles";
-
-export default makeStyles(theme => ({
+export default theme => ({
     navbar: {
         position: 'fixed',
         top: 0,
@@ -221,4 +219,4 @@ export default makeStyles(theme => ({
         navIcon: { display: 'block' },
         navLinks: { display: 'none' }
     }
-}));
+});

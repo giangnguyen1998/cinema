@@ -6,7 +6,6 @@ import {textTruncate} from '../../../../../ultils/utils';
 import {Link} from 'react-router-dom';
 
 const MovieCard = props => {
-
     const {classes, movie} = props;
 
     return (

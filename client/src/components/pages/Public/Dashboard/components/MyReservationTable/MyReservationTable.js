@@ -7,23 +7,26 @@ import {
     TableCell,
     TableHead,
     TableRow,
-    TablePagination
+    TablePagination,
+    withStyles
 } from '@material-ui/core';
 
 import Portlet from "../../../../../Portlet/Portlet";
 import PortletContent from "../../../../../PortletContent/PortletContent";
-import useStyles from "./styles";
+import styles from "./styles";
 
 const ReservationsTable = (props) => {
-    const classes = useStyles();
-
+    //define state
     const [paging, setPaging] = useState({
-        rowsPerPage: 10,
-        page: 0
+        page: 0,
+        rowsPerPage: 5
     });
-
-    const handleChangePage = (e, page) => {
-        setPaging({page, ...paging});
+    //destructuring
+    const {page, rowsPerPage} = paging;
+    const {className, reservations = [], movies = [], cinemas = [], classes} = props;
+    //handle events
+    const handleChangePage = (e, newPage) => {
+        setPaging({...paging, page: newPage});
     };
 
     const handleChangeRowsPerPage = e => {
@@ -35,8 +38,6 @@ const ReservationsTable = (props) => {
         return item ? item[attr] : `Not ${attr} Found`;
     };
 
-    const {className, reservations = [], movies = [], cinemas = []} = props;
-    const {rowsPerPage, page} = paging;
     const rootClassName = classNames(classes.root, className);
 
     return (
@@ -92,11 +93,11 @@ const ReservationsTable = (props) => {
                     nextIconButtonProps={{
                         'aria-label': 'Next Page'
                     }}
-                    onChangePage={handleChangePage}
-                    onChangeRowsPerPage={handleChangeRowsPerPage}
                     page={page}
                     rowsPerPage={rowsPerPage}
                     rowsPerPageOptions={[5, 10, 25]}
+                    onChangePage={handleChangePage}
+                    onChangeRowsPerPage={handleChangeRowsPerPage}
                 />
             </PortletContent>
         </Portlet>
@@ -113,4 +114,4 @@ ReservationsTable.propTypes = {
     cinemas: PropTypes.array.isRequired
 };
 
-export default ReservationsTable;
+export default withStyles(styles)(ReservationsTable);

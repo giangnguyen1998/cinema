@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 import LinearProgress from '@material-ui/core/LinearProgress';
 import PropsType from "prop-types";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import {withStyles} from "@material-ui/core";
 
-const useStyles = makeStyles(theme => ({
+const styles = theme => ({
     root: {
         width: '100%',
         marginTop: 1
@@ -11,10 +11,9 @@ const useStyles = makeStyles(theme => ({
     hide: {
         display: 'none'
     }
-}));
+});
 
-const CustomLinearProgress = ({loading}) => {
-    const classes = useStyles();
+const CustomLinearProgress = ({loading, classes}) => {
     const [completed, setCompleted] = useState(0);
     const [isShow, setIsShow] = useState(true);
 
@@ -65,4 +64,4 @@ CustomLinearProgress.propsType = {
     loading: PropsType.bool.isRequired
 };
 
-export default CustomLinearProgress;
+export default withStyles(styles)(CustomLinearProgress);

@@ -1,6 +1,4 @@
-import makeStyles from "@material-ui/core/styles/makeStyles";
-
-export default makeStyles(theme => ({
+export default theme => ({
     root: {
         backgroundColor: theme.palette.background.default,
         height: '100vh'
@@ -47,4 +45,4 @@ export default makeStyles(theme => ({
             justifyContent: 'center'
         }
     }
-}));
+});
